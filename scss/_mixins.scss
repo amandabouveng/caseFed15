@@ -1,0 +1,39 @@
+/*
+* COLORS
+*/
+$accentRed: rgb(232, 78, 15);
+$accentYellow: rgb(251, 225, 0);
+$accentGreen: rgb(0, 164, 112);
+$accentBlue: rgb(0, 180, 213);
+$primaryGrey: rgb(74, 74, 73);
+
+/*
+* FONTS
+*/
+@mixin mainHeading {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+@mixin subHeading {
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+@mixin captionText {
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+@mixin bodyText {
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+/*
+* GRIDS
+*/
+
+
+
+
