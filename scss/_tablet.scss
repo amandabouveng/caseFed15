@@ -1,6 +1,8 @@
-@for $i from 1 through 12 {
-     .col-t-#{$i} {
-     	@include span-columns($i);
-     	@include omega(3n);
-      }
+.hide-mobile {
+	@include span-columns(4);
+	@include pad();
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	overflow: hidden;
 }
