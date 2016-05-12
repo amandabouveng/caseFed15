@@ -8,7 +8,6 @@
 }
 
 .section-container {
-	//background-color: red;
 	height: 80vh;
 	position: relative;
 	width: 100vw;
@@ -74,12 +73,12 @@
 .about__heading{
 	@include mainHeading;
 	color: $accentOrange;
-	padding: 5% 5% 0 5%;
+	padding: 0 0 5% 0;
 }
 
 .about__bodyText {
 	@include bodyText;
-	padding: 5%; 
+	padding-bottom: 3%; 
 	color: $primaryGrey;
 }
 
@@ -87,30 +86,18 @@
 	display: none;
 }
 
-.outline {
-	outline: 1px solid black;
-}
-
-.business {
-	@include outer-container;
-}
-
 .business__heading {
 	@include subHeading;
 	text-align: center;
 	color: $accentOrange;
-	padding: 5%;
-}
-
-.icons {
-	@include outer-container;
-	padding: 10px;
+	padding-top: $gutter/2;
+	padding-bottom: $gutter/2; 
+	width: 100%;
 }
 
 .icons__section {
-	@include span-columns(4);
-	@include omega(3n);
 	text-align: center;
+	padding: 1%;
 }
 
 .icons__image--caption {
@@ -118,14 +105,13 @@
 	font-weight: 600;
 	color: $primaryGrey;
 	text-align: center;
-	padding-top: 5%; 
 }
-
 
 .col-container {
 	@include outer-container;
 	padding: $gutter;
 }
+
 .col-row {
 	@include row;
 	padding: .2em 0;
@@ -133,7 +119,8 @@
 
 .hero {
 	@include outer-container;
-	height: 50vh;
+	position: relative;
+	height: 75vh;
 	background: url('../imgs/case_sibylla/sibylla_hero.jpg') no-repeat center center;
 	background-size: cover;
 	text-align: center;
@@ -153,6 +140,13 @@
 	.intro__caption {
 		@include captionText;
 		color: #ffffff;
+	}
+	.slice-bottom {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: em(60);
+		background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
 	}
 }
 
