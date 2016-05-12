@@ -17,7 +17,30 @@
 	padding: .2em 0;
 }
 
-.about {
-    //@include outer-container;
-    //width: 100vw;
+.icons__section {
+    text-align: center;
+    padding: $gutter;
 }
+
+.icons__image {
+    img { 
+        width: 75%;
+        height: auto;
+    }
+}
+
+.icons__image--caption {
+   padding-top: $gutter/2; 
+
+}
+
+.about__image {
+    display: block;
+    width: 50%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+

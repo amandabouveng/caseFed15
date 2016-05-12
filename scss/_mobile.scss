@@ -7,12 +7,6 @@
 	}
 }
 
-
-.about {
-	//@include outer-container;
-	//width: 100vw;
-}
-
 .about__heading{
 	@include mainHeading;
 	color: $accentOrange;
@@ -29,20 +23,22 @@
 	display: none;
 }
 
+.business {
+	@include outer-container;
+}
+
 .business__heading {
 	@include subHeading;
 	text-align: center;
 	color: $accentOrange;
-}
-
-.icons {
-	@include outer-container;
+	padding-top: $gutter/2;
+	padding-bottom: $gutter/2; 
+	width: 100%;
 }
 
 .icons__section {
-	@include span-columns(4);
-	@include omega(3n);
 	text-align: center;
+	padding: 1%;
 }
 
 .icons__image--caption {
@@ -50,7 +46,6 @@
 	font-weight: 600;
 	color: $primaryGrey;
 	text-align: center;
-//	padding-top: 5%; 
 }
 
 .col-container {
