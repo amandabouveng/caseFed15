@@ -6,6 +6,123 @@
 		@else { @include omega; }
 	}
 }
+
+.section-container {
+	//background-color: red;
+	height: 80vh;
+	position: relative;
+	width: 100vw;
+}
+
+.main-nav {
+		width: 100vw;
+	ul{
+		margin: 2% 5% ;
+	}
+	ul li {
+		padding-right: 2.5%;
+		display: inline-block;
+		@include captionText;
+		color: $accentYellow;
+		vertical-align: top;
+		line-height: 2.5rem;
+	}
+	img{
+		height: 3em;
+	}
+}
+.puff{
+	height: 50%;
+	@include fill-parent();
+	@include row(table);
+}
+
+.puff__item {
+	@include span-columns(4);
+	@include pad();
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.divider-top{
+	position: absolute;
+	background: linear-gradient(-3deg, transparent 70%, white 0%); 
+	z-index: 2000;
+	height: 30vh;
+	width: 100vw;
+}
+.divider-bottom {
+	position: absolute;
+	height: 30vh;
+	background: linear-gradient(177deg, transparent 70%, white 0%); 
+	z-index: 2000;
+	width: 100vw;
+	bottom: 0;
+}
+
+.hide-mobile {
+	display: none;
+}
+
+
+.about {
+	@include outer-container;
+	width: 100vw;
+}
+
+.about__heading{
+	@include mainHeading;
+	color: $accentOrange;
+	padding: 5% 5% 0 5%;
+}
+
+.about__bodyText {
+	@include bodyText;
+	padding: 5%; 
+	color: $primaryGrey;
+}
+
+.about__image {
+	display: none;
+}
+
+.outline {
+	outline: 1px solid black;
+}
+
+.business {
+	@include outer-container;
+}
+
+.business__heading {
+	@include subHeading;
+	text-align: center;
+	color: $accentOrange;
+	padding: 5%;
+}
+
+.icons {
+	@include outer-container;
+	padding: 10px;
+}
+
+.icons__section {
+	@include span-columns(4);
+	@include omega(3n);
+	text-align: center;
+}
+
+.icons__image--caption {
+	@include bodyText;
+	font-weight: 600;
+	color: $primaryGrey;
+	text-align: center;
+	padding-top: 5%; 
+}
+
+
 .col-container {
 	@include outer-container;
 	padding: $gutter;
@@ -76,3 +193,5 @@
 		height: auto;
 	}
 }
+
+
