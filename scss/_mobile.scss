@@ -1,9 +1,12 @@
 @for $i from 1 through 12 {
-     .col-m-#{$i} {
-     	@include span-columns($i);
-     	@include omega(2n);
-      }
+	.col-m-#{$i} {
+		@include span-columns($i);
+		$columns: round(12 / $i);
+		@if $i > 1 { @include omega(#{$columns}n); }
+		@else { @include omega; }
+	}
 }
+
 
 .about {
 	@include outer-container;
@@ -12,7 +15,7 @@
 
 .about__heading{
 	@include mainHeading;
-	color: $accentRed;
+	color: $accentOrange;
 	padding: 5% 5% 0 5%;
 }
 
@@ -37,7 +40,7 @@
 .business__heading {
 	@include subHeading;
 	text-align: center;
-	color: $accentRed;
+	color: $accentOrange;
 	padding: 5%;
 }
 
@@ -58,5 +61,69 @@
 	color: $primaryGrey;
 	text-align: center;
 	padding-top: 5%; 
+}
+
+
+.col-container {
+	@include outer-container;
+	padding: $gutter;
+}
+.col-row {
+	@include row;
+	padding: .2em 0;
+}
+
+.hero {
+	@include outer-container;
+	height: 50vh;
+	background: url('../imgs/case_sibylla/sibylla_hero.jpg') no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	.intro {
+		position: relative;
+		top: 16vh;
+	}
+	.intro__logo img {
+		width: 20vw;
+		height: auto;
+		margin: o auto;
+	}
+	.intro__heading {
+		@include mainHeading;
+		color: #ffffff;
+	}
+	.intro__caption {
+		@include captionText;
+		color: #ffffff;
+	}
+}
+
+.single {
+	@include outer-container;
+	width: 100vw;
+	padding: em(20);
+	background-color: #ffffff;
+	& * {
+		margin-bottom: em(10);
+	}
+	.single__icon {
+		text-align: center;
+	}
+	.single__heading {
+		@include subHeading;
+		color: $accentOrange;
+		text-align: center;
+	}
+	.single__paragraph {
+		@include span-columns(12);
+		@include omega;
+		@include bodyText;
+		color: $primaryGrey;
+		margin-bottom: em(20);
+	}
+	.single__image img {
+		width: 100%;
+		height: auto;
+	}
 }
 
