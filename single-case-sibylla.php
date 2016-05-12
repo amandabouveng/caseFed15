@@ -18,6 +18,7 @@
 			<p class="intro__caption">Lanseringsstrategi, Konceptutveckling,
 		Designstrategi.</p>
 		</div>
+		<div class="slice-bottom"></div>
 	</section>
 	<article class="single">
 		<figure class="single__icon" alt="Icon of a hand.">Hand</figure>
@@ -31,22 +32,24 @@
 		<figure class="single__icon" alt="Icon for a explosion.">Explosion</figure>
 		<h1 class="single__heading">Resultat</h1>
 		<p class="single__paragraph">7-Eleven beslutade sig för att lansera konceptet och ge sina kunder en möjlighet att ta del av det nya spännande erbjudandet. Man genomförde en betydande kampanj i sina butiker och lyfte Butcher’s Plate på sina food trucks. Butcher’s Plate bidrar nu på flera ställen till att visa att Sibylla är ett modernt och innovativt företag, som aktivt jobbar med produktutveckling och har näsa för de globala mattrenderna.</p>
-
-		<figure class="single__image" alt="">
-			<img src="imgs/case_sibylla/sibylla01_desktop.jpg" alt="">
-		</figure>
-		<figure class="single__image" alt="">
-			<img src="imgs/case_sibylla/sibylla02_desktop.jpg" alt="">
-		</figure>
-		<figure class="single__image" alt="">
-			<img src="imgs/case_sibylla/sibylla03_desktop.jpg" alt="">
-		</figure>
-		<figure class="single__image" alt="">
-			<img src="imgs/case_sibylla/sibylla04_desktop.jpg" alt="">
-		</figure>
-		<figure class="single__image" alt="">
-			<img src="imgs/case_sibylla/sibylla05_desktop.jpg" alt="">
-		</figure>
+		
+		<div class="col-row">
+			<figure class="single__image col-m-12 col-d-4" alt="">
+				<img src="imgs/case_sibylla/sibylla01.jpg" alt="">
+			</figure>
+			<figure class="single__image col-m-12 col-d-4" alt="">
+				<img src="imgs/case_sibylla/sibylla02.jpg" alt="">
+			</figure>
+			<figure class="single__image col-m-12 col-d-4" alt="">
+				<img src="imgs/case_sibylla/sibylla03.jpg" alt="">
+			</figure>		
+			<figure class="single__image col-m-12 col-d-4" alt="">
+				<img src="imgs/case_sibylla/sibylla04.jpg" alt="">
+			</figure>
+			<figure class="single__image col-m-12 col-d-4" alt="">
+				<img src="imgs/case_sibylla/sibylla05.jpg" alt="">
+			</figure>
+		</div>
 	</article>
 </body>
 </html>

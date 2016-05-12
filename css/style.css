@@ -182,6 +182,71 @@ table {
   .col-m-12:nth-child(1n) {
     margin-right: 0; }
 
+.section-container {
+  height: 80vh;
+  position: relative;
+  width: 100vw; }
+
+.main-nav {
+  width: 100vw; }
+  .main-nav ul {
+    margin: 2% 5%; }
+  .main-nav ul li {
+    padding-right: 2.5%;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fbe100;
+    vertical-align: top;
+    line-height: 2.5rem; }
+  .main-nav img {
+    height: 3em; }
+
+.puff {
+  height: 50%;
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+
+.puff__item {
+  display: table-cell;
+  width: 33.33333%;
+  padding: 2.35765%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden; }
+
+.divider-top {
+  position: absolute;
+  background: linear-gradient(-3deg, transparent 70%, white 0%);
+  z-index: 2000;
+  height: 30vh;
+  width: 100vw; }
+
+.divider-bottom {
+  position: absolute;
+  height: 30vh;
+  background: linear-gradient(177deg, transparent 70%, white 0%);
+  z-index: 2000;
+  width: 100vw;
+  bottom: 0; }
+
+.hide-mobile {
+  display: none; }
+
+.about {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw; }
+  .about::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .about__heading {
   font-size: 1.5rem;
   font-weight: 700;
@@ -198,15 +263,6 @@ table {
 
 .about__image {
   display: none; }
-
-.business {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .business::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .business__heading {
   font-size: 1rem;
@@ -252,7 +308,8 @@ table {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  height: 50vh;
+  position: relative;
+  height: 75vh;
   background: url("../imgs/case_sibylla/sibylla_hero.jpg") no-repeat center center;
   background-size: cover;
   text-align: center; }
@@ -277,6 +334,12 @@ table {
     font-weight: 600;
     text-transform: uppercase;
     color: #ffffff; }
+  .hero .slice-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.75em;
+    background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%); }
 
 .single {
   max-width: 1200px;
@@ -452,7 +515,21 @@ table {
     .col-row::after {
       clear: both;
       content: "";
-      display: table; } }
+      display: table; }
+
+  .hide-mobile {
+    display: block;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    padding: 2.35765%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden; }
+    .hide-mobile:last-child {
+      margin-right: 0; } }
 @media screen and (min-width: 1024px) {
   .col-d-1 {
     float: left;
@@ -607,7 +684,23 @@ table {
     width: 50%; }
     .about__image img {
       width: 100%;
-      height: auto; } }
+      height: auto; }
+
+  .hero .intro {
+    top: 20vh; }
+  .hero .intro__logo img {
+    width: 30vw;
+    height: auto;
+    margin: o auto; }
+  .hero .intro__heading {
+    font-size: 3em; }
+  .hero .intro__caption {
+    font-size: 1.5em; }
+  .hero .slice-bottom {
+    height: 7.5em; }
+
+  .single {
+    max-width: 60em; } }
 html {
   font-size: 1rem; }
 

@@ -1,3 +1,4 @@
+
 @for $i from 1 through 12 {
      .col-d-#{$i} {
      	@include span-columns($i);
@@ -11,7 +12,6 @@
 	@include outer-container;
 	padding: $gutter;
 }
-
 .col-row {
 	@include row;
 	padding: .2em 0;
@@ -44,3 +44,25 @@
     }
 }
 
+.hero {
+    .intro {
+        top: 20vh;
+    }
+    .intro__logo img {
+        width: 30vw;
+        height: auto;
+        margin: o auto;
+    }
+    .intro__heading {
+        font-size: em(48);
+    }
+    .intro__caption {
+        font-size: em(24);
+    }
+    .slice-bottom {
+        height: em(120);
+    }
+}
+.single {
+    max-width: em(960);
+}
