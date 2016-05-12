@@ -5,6 +5,58 @@
       }
 }
 
-.col-container {
+.about {
+	@include outer-container;
+	width: 100vw;
+}
+
+.about__heading{
+	@include mainHeading;
+	color: $accentRed;
+	padding: 5% 5% 0 5%;
+}
+
+.about__bodyText {
+	@include bodyText;
+	padding: 5%; 
+	color: $primaryGrey;
+}
+
+.about__image {
+	display: none;
+}
+
+.outline {
+	outline: 1px solid black;
+}
+
+.business {
 	@include outer-container;
 }
+
+.business__heading {
+	@include subHeading;
+	text-align: center;
+	color: $accentRed;
+	padding: 5%;
+}
+
+.icons {
+	@include outer-container;
+	padding: 10px;
+}
+
+.icons__section {
+	@include span-columns(4);
+	@include omega(3n);
+	text-align: center;
+}
+
+.icons__image--caption {
+	@include bodyText;
+	font-weight: 600;
+	color: $primaryGrey;
+	text-align: center;
+	padding-top: 5%; 
+}
+

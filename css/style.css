@@ -4,6 +4,53 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 /*
 * COLORS
 */
@@ -157,14 +204,82 @@ html {
   .col-m-12:nth-child(2n+1) {
     clear: left; }
 
-.col-container {
+.about {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: auto; }
-  .col-container::after {
+  margin-right: auto;
+  width: 100vw; }
+  .about::after {
     clear: both;
     content: "";
     display: table; }
+
+.about__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e84e0f;
+  padding: 5% 5% 0 5%; }
+
+.about__bodyText {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 5%;
+  color: #4a4a49; }
+
+.about__image {
+  display: none; }
+
+.outline {
+  outline: 1px solid black; }
+
+.business {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .business::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.business__heading {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e84e0f;
+  padding: 5%; }
+
+.icons {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px; }
+  .icons::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.icons__section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center; }
+  .icons__section:last-child {
+    margin-right: 0; }
+  .icons__section:nth-child(3n) {
+    margin-right: 0; }
+  .icons__section:nth-child(3n+1) {
+    clear: left; }
+
+.icons__image--caption {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-weight: 600;
+  color: #4a4a49;
+  text-align: center;
+  padding-top: 5%; }
 
 @media screen and (min-width: 770px) {
   .col-t-1 {
