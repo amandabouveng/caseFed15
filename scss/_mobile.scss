@@ -1,3 +1,20 @@
+@for $i from 1 through 12 {
+	.col-m-#{$i} {
+		@include span-columns($i);
+		$columns: round(12 / $i);
+		@if $i > 1 { @include omega(#{$columns}n); }
+		@else { @include omega; }
+	}
+}
+.col-container {
+	@include outer-container;
+	padding: $gutter;
+}
+.col-row {
+	@include row;
+	padding: .2em 0;
+}
+
 .hero {
 	@include outer-container;
 	height: 50vh;
@@ -49,5 +66,5 @@
 	.single__image img {
 		width: 100%;
 		height: auto;
-	}	
+	}
 }

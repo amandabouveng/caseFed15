@@ -1,6 +1,18 @@
 @for $i from 1 through 12 {
      .col-t-#{$i} {
      	@include span-columns($i);
-     	@include omega(3n);
+     	$columns: round(12 / $i);
+     	@if $i > 1 { @include omega(#{$columns}n); }
+     	@else { @include omega; }
       }
+}
+
+.col-container {
+	@include outer-container;
+	padding: $gutter;
+}
+
+.col-row {
+	@include row;
+	padding: .2em 0;
 }
