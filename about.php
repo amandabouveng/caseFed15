@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	
-	<section class="col-container col-m-12 col-d-12">
-		
-		<section class="col-m-12 col-d-6">
+
+<section class="col-container" style="position: relative; height: 80vh;">
+	<div class="divider-top"></div>
+		<section class="col-m-12 col-d-6 " style=" padding-top: 15vh;">
 		 	<h1 class="about__heading">Om oss</h1>
 			<p class="about__bodyText">Vi är en ny fullservicebyrå inom retail som hjälper varumärken att bli valda. Vi startar den här byrån för att vi vill korta avståndet mellan insikt och genomförande. Det kan vi göra för att vi skapar en ny byråkonstellation där de tidigare kommunikationsexperterna inom butik – Locomotiv och Brand Support – går ihop under namnet Retail United. Nytt är också ett nära samarbete med strategerna på Agenda Retail. </p>
 
@@ -31,8 +22,6 @@
 				</div>
 			</section>
 		</section>
-		
-		<figure class="about__image col-m-12 col-d-6"><img src="office.jpg"></figure>
+		<div class="about__image col-m-12 col-d-6" style="height: 100%; background-image: url('office.jpg'); margin-left: 10px; background-position: center center; background-size: cover;"></div>
+		<div class="divider-bottom"></div>
 	</section> <!-- /about-->
-</body>
-</html>

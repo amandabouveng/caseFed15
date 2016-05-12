@@ -223,12 +223,12 @@ table {
   position: absolute;
   background: linear-gradient(-3deg, transparent 70%, white 0%);
   z-index: 2000;
-  height: 30vh;
+  height: 35vh;
   width: 100vw; }
 
 .divider-bottom {
   position: absolute;
-  height: 30vh;
+  height: 35vh;
   background: linear-gradient(177deg, transparent 70%, white 0%);
   z-index: 2000;
   width: 100vw;
@@ -378,6 +378,16 @@ table {
   .single .single__image img {
     width: 100%;
     height: auto; }
+
+.costumers {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px; }
+
+#us {
+  display: none; }
 
 @media screen and (min-width: 770px) {
   .col-t-1 {
@@ -650,11 +660,15 @@ table {
     .col-d-12:nth-child(1n) {
       margin-right: 0; }
 
+  #us {
+    display: block; }
+
   .col-container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.618em; }
+    max-width: 2000px;
+    padding-right: 0; }
     .col-container::after {
       clear: both;
       content: "";
@@ -678,13 +692,6 @@ table {
 
   .icons__image--caption {
     padding-top: 0.809em; }
-
-  .about__image {
-    display: block;
-    width: 50%; }
-    .about__image img {
-      width: 100%;
-      height: auto; }
 
   .hero .intro {
     top: 20vh; }

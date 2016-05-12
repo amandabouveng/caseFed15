@@ -7,10 +7,13 @@
      	@else { @include omega; }
       }
 }
-
+#us{
+	display: block;
+}
 .col-container {
 	@include outer-container;
-	padding: $gutter;
+	max-width: 2000px;
+	padding-right: 0;
 }
 .col-row {
 	@include row;
@@ -34,14 +37,9 @@
 
 }
 
-.about__image {
-    display: block;
-    width: 50%;
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+.about__image {
+
 }
 
 .hero {
