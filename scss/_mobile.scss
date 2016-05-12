@@ -1,7 +1,7 @@
 @for $i from 1 through 12 {
      .col-m-#{$i} {
      	@include span-columns($i);
-     	@include omega(3n);
+     	@include omega(2n);
       }
 }
 
