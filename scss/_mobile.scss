@@ -9,19 +9,19 @@
 
 
 .about {
-	@include outer-container;
-	width: 100vw;
+	//@include outer-container;
+	//width: 100vw;
 }
 
 .about__heading{
 	@include mainHeading;
 	color: $accentOrange;
-	padding: 5% 5% 0 5%;
+	padding: 0 0 5% 0;
 }
 
 .about__bodyText {
 	@include bodyText;
-	padding: 5%; 
+	padding-bottom: 3%; 
 	color: $primaryGrey;
 }
 
@@ -29,24 +29,14 @@
 	display: none;
 }
 
-.outline {
-	outline: 1px solid black;
-}
-
-.business {
-	@include outer-container;
-}
-
 .business__heading {
 	@include subHeading;
 	text-align: center;
 	color: $accentOrange;
-	padding: 5%;
 }
 
 .icons {
 	@include outer-container;
-	padding: 10px;
 }
 
 .icons__section {
@@ -60,14 +50,14 @@
 	font-weight: 600;
 	color: $primaryGrey;
 	text-align: center;
-	padding-top: 5%; 
+//	padding-top: 5%; 
 }
-
 
 .col-container {
 	@include outer-container;
 	padding: $gutter;
 }
+
 .col-row {
 	@include row;
 	padding: .2em 0;

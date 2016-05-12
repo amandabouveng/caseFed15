@@ -8,7 +8,7 @@
 </head>
 <body>
 	
-	<section class="about">
+	<section class="col-container about col-m-12 col-d-6">
 		<section>
 		 	<h1 class="about__heading">Om oss</h1>
 			<p class="about__bodyText">Vi är en ny fullservicebyrå inom retail som hjälper varumärken att bli valda. Vi startar den här byrån för att vi vill korta avståndet mellan insikt och genomförande. Det kan vi göra för att vi skapar en ny byråkonstellation där de tidigare kommunikationsexperterna inom butik – Locomotiv och Brand Support – går ihop under namnet Retail United. Nytt är också ett nära samarbete med strategerna på Agenda Retail. </p>
@@ -16,7 +16,7 @@
 			<p class="about__bodyText">Hos Retail United samlar vi nu all den specialistkunskap som ger resultat, under ett tak. Djupare, uppdaterade insikter om kunder och konsumenter kombineras med ansvar för hela processen. Från säljkår, kedja, butik till shopper och konsument. Varmt välkommen till oss!</p>
 		</section>
 		
-		<section class="business">
+		<section class="col-container">
 
 			<h2 class="business__heading">Våra affärsområden</h2>
 			<section class="icons">
@@ -33,9 +33,6 @@
 					<figcaption class="icons__image--caption">Genomförande</figcaption>
 				</div>
 			</section>
-
-			
-
 		</section>
 		<figure class="about__image"><img src="office.jpg"></figure>
 	</section> <!-- /about-->
