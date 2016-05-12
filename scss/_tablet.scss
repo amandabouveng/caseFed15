@@ -1,0 +1,6 @@
+@for $i from 1 through 12 {
+     .col-t-#{$i} {
+     	@include span-columns($i);
+     	@include omega(3n);
+      }
+}
