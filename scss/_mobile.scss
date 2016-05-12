@@ -17,7 +17,8 @@
 
 .hero {
 	@include outer-container;
-	height: 50vh;
+	position: relative;
+	height: 75vh;
 	background: url('../imgs/case_sibylla/sibylla_hero.jpg') no-repeat center center;
 	background-size: cover;
 	text-align: center;
@@ -37,6 +38,13 @@
 	.intro__caption {
 		@include captionText;
 		color: #ffffff;
+	}
+	.slice-bottom {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: em(60);
+		background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
 	}
 }
 
