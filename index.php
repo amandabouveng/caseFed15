@@ -1,7 +1,7 @@
 <?php include 'head.php'; ?>
 <body>
 	<header class="section-container">
-		<nav class="main-nav divider-top">
+		<nav class="main-nav divider-top--header">
 			<ul>
 				<li><img src="imgs/logo-menu.svg" alt=""><li>
 				<li>Hem</li>
@@ -50,7 +50,7 @@
 						</div>
 					</article>
 					<article class="col-d-6">
-						<div id="us" style="background-image: url('office.jpg'); margin-left: 10px; background-position: center center; background-size: cover; height: 80vh;"></div>
+						<div id="us" style="background-image: url('office.jpg'); margin-left: 10px; background-position: center center; background-size: cover; height: 100vh;"></div>
 					</article>
 					</section>
 			<div class="divider-bottom"></div>
