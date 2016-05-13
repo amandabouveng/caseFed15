@@ -9,6 +9,7 @@
 }
 #us{
 	display: block;
+  margin-top: em(-25);
 }
 .col-container {
 	@include outer-container;
@@ -52,7 +53,7 @@
         margin: o auto;
     }
     .intro__heading {
-        font-size: em(48);
+        font-size: 4em;
     }
     .intro__caption {
         font-size: em(24);
@@ -114,6 +115,24 @@
       width: 25%;
     }
   }
+}
+.switch-case {
+  display: block;
+  position: fixed;
+  top: 50%;
+  .fa {
+    font-size: 5em;
+    color: $accentYellow;
+    &:hover {
+      -webkit-text-stroke: 0.03em $accentYellow;
+    }
+  }
+}
+.switch-case--prev {
+  left: em(15);
+}
+.switch-case--next {
+  right: em(15);
 }
 
 .contact__heading {

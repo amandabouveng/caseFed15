@@ -102,5 +102,11 @@
 
 	<?php include 'contact.php'; ?>
 	
+	<span class="switch-case switch-case--prev">
+		<i class="fa fa-angle-left" aria-hidden="true"></i>
+	</span>
+	<span class="switch-case switch-case--next">
+		<i class="fa fa-angle-right" aria-hidden="true"></i>
+	</span>
 </body>
 </html>
