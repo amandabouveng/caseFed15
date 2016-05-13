@@ -4,9 +4,10 @@
 		<nav class="main-nav divider-top--transparent">
 			<ul>
 				<li><img src="imgs/logo-menu.svg" alt=""><li>
-				<li>Hem</li>
-				<li>Case</li>
+				<li><a href="index.php>">Hem</a></li>
+				<li><a href="single-case-sibylla.php">Case</a></li>
 				<li>Feed</li>
+				<li>Kontakt</li>
 			</ul>
 		</nav>
 		<div class="intro">

@@ -7,9 +7,15 @@
      	@else { @include omega; }
       }
 }
+
+.omega {
+	@include omega;
+}
+.margin {
+  padding: 7em 5%;
+}
 #us{
 	display: block;
-  margin-top: em(-25);
 }
 .col-container {
 	@include outer-container;
@@ -147,4 +153,36 @@
     padding-left: $padding-w;
     padding-top: 0;
     clear: both;
+}
+
+// DIVIDERS
+.divider-top {
+  background: linear-gradient( -5deg, transparent 49.8%, #ffffff 50%);
+}
+.divder-top--transparent {
+  background: transparent;
+}
+.divider-top--case-contact {
+  background: $accentGreen;
+}
+.divider-top--yellow {
+  background: linear-gradient( -5deg, transparent 49.8%, $accentYellow 50%);
+}
+.divider-top--grey {
+  background: linear-gradient( -5deg, transparent 49.8%, $primaryGrey 50%);
+}
+.divider-top--header {
+  background: linear-gradient( -5deg, transparent 49.8%, $primaryGrey 50%);
+}
+.divider-bottom {
+  background: linear-gradient( 175deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-bottom--yellow {
+  background: linear-gradient(175deg, transparent 49.8%, $accentYellow 50%);
+}
+.divider-bottom--case-contact {
+  background: $accentGreen;
+}
+.divider-bottom--grey {
+  background: linear-gradient(175deg, transparent 49.8%, $primaryGrey 50%); 
 }

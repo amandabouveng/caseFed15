@@ -1,7 +1,7 @@
 
 @for $i from 1 through 12 {
      .col-t-#{$i} {
-     	@include span-columns($i);
+     	@include span-columns($i, table);
      	$columns: round(12 / $i);
      	@if $i > 1 { @include omega(#{$columns}n); }
      	@else { @include omega; }
@@ -10,7 +10,7 @@
 
 .col-container {
 	@include outer-container;
-	padding: $gutter;
+	padding: 0;
 }
 
 .col-row {
@@ -18,12 +18,28 @@
 	padding: .2em 0;
 }
 
-.hide-mobile {
-	display: block;
-	@include span-columns(4);
-	@include pad();
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+.omega {
+	@include omega;
+}
+
+.section-container {
+	height: 40em;
+	width: 100vw;
 	overflow: hidden;
 }
+
+.puff {
+	height: 25%;
+	width: 108%;
+	.puff__item {
+		@include span-columns(3);
+		@include omega;
+		height: 20em;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		overflow: hidden;
+	}
+}
+
+

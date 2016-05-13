@@ -26,50 +26,26 @@
 				c0,6.6-5.6,12-12.5,12c-6.9,0-12.5-5.4-12.5-12V74.8H59.4v98.4c0,25.6,21,46.4,46.9,46.4c25.9,0,46.9-20.8,46.9-46.4V73.6
 				c0-0.6,0-1.2-0.1-1.9C151,31.5,117.4,0,76.6,0"/>
 				</svg><li>
-				<li><a href="index.php>">Hem</a></li>
-				<li><a href="single-case-sibylla.php">Case</a></li>
+				<li>Hem</li>
+				<li>Case</li>
 				<li>Feed</li>
 				<li>Kontakt</li>
 			</ul>
 		</nav>
 
 		<figure class="puff">
-				<div class="puff__item" style="background-image: url('imgs/fig8.jpg')">
-					<div class="overlay overlayYellow"></div>
-					<p>Strategi</p>
-				</div>
-				<div class="puff__item" style="background-image: url('imgs/fig3.jpg')">
-					<div class="overlay overlayBlue"></div>
-					<p>Strategi</p>
-				</div>
-				<div class="puff__item" style="background-image: url('imgs/fig4.jpg')">
-					<div class="overlay overlayOrange"></div>
-					<p>Strategi</p>
-				</div>
-				<div class="puff__item" style="background-image: url('imgs/fig5.jpg')">
-					<div class="overlay overlayGreen"></div>
-					<p>Strategi</p>
-				</div>
+				<div class="puff__item" style="background-image: url('imgs/fig8.jpg')"></div>
+				<div class="puff__item" style="background-image: url('imgs/fig3.jpg')"></div>
+				<div class="puff__item" style="background-image: url('imgs/fig4.jpg')"></div>
+				<div class="puff__item" style="background-image: url('imgs/fig5.jpg')"></div>
 		</figure>
 		<figure class="puff">
-				<div class="puff__item" style="background-image: url('imgs/fig2.jpg')">
-					<div class="overlay overlayBlue"></div>
-					<p>Strategi</p>
-				</div>
-				<div class="puff__item" style="background-image: url('imgs/fig6.jpg')">
-					<div class="overlay overlayOrange"></div>
-					<p>Strategi</p>
-				</div>
-				<div class="puff__item" style="background-image: url('imgs/fig7.jpg')">
-					<div class="overlay overlayGreen"></div>
-					<p>Strategi</p>
-				</div>
-				<div class="puff__item" style="background-image: url('imgs/fig1.jpg')">
-					<div class="overlay overlayYellow"></div>
-					<p>Strategi</p>
-				</div>
+				<div class="puff__item" style="background-image: url('imgs/fig2.jpg')"></div>
+				<div class="puff__item" style="background-image: url('imgs/fig6.jpg')"></div>
+				<div class="puff__item" style="background-image: url('imgs/fig7.jpg')"></div>
+				<div class="puff__item" style="background-image: url('imgs/fig1.jpg')"></div>
 		</figure>
-		<div class="divider-bottom--header"></div>
+		<div class="divider-bottom"></div>
 	</header>
 
 	<main>
