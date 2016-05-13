@@ -8,8 +8,64 @@
       }
 }
 
-
-
 .omega {
 	@include omega;
+}
+
+#us{
+	display: block;
+}
+.col-container {
+	@include outer-container;
+	max-width: 2000px;
+	padding-right: 0;
+}
+.col-row {
+	@include row;
+	padding: .2em 0;
+}
+
+.icons__section {
+    text-align: center;
+    padding: $gutter;
+}
+
+.icons__image {
+    img { 
+        width: 75%;
+        height: auto;
+    }
+}
+
+.icons__image--caption {
+   padding-top: $gutter/2; 
+
+}
+
+
+.about__image {
+
+}
+
+.hero {
+    .intro {
+        top: 20vh;
+    }
+    .intro__logo img {
+        width: 30vw;
+        height: auto;
+        margin: o auto;
+    }
+    .intro__heading {
+        font-size: em(48);
+    }
+    .intro__caption {
+        font-size: em(24);
+    }
+    .slice-bottom {
+        height: em(120);
+    }
+}
+.single {
+    max-width: em(960);
 }
