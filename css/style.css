@@ -253,9 +253,9 @@ body {
   bottom: 0;
   width: 100%; }
 
-.divider-top- {
+.divider-top, .divder-top--transparent, .divider-top--case-contact {
   position: absolute;
-  background: linear-gradient(-3deg, transparent 70%, #fbe100 0%);
+  background: linear-gradient(-3deg, transparent 70%, white 0%);
   z-index: 2000;
   height: 32vh;
   width: 100vw; }
@@ -263,7 +263,7 @@ body {
 .divider-bottom, .divider-bottom--case-contact {
   position: absolute;
   height: 32vh;
-  background: linear-gradient(177deg, transparent 70%, #fbe100 0%);
+  background: linear-gradient(177deg, transparent 70%, white 0%);
   z-index: 2000;
   width: 100vw;
   bottom: 0;
@@ -364,7 +364,7 @@ body {
     content: "";
     display: table; }
 
-.costumers {
+.costumer {
   background-color: #fbe100; }
 
 .hero {

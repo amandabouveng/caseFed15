@@ -56,7 +56,7 @@
 			<div class="divider-bottom--yellow"></div>
 		</section>
 
-		<section style="height: auto; position: relative;" class="costumers">
+		<section style="height: auto; position: relative;" class="costumer">
 			<div class="divider-top--yellow"></div>
 				<section class="col-container">
 					<article class="col-d-12 margin">
