@@ -23,12 +23,12 @@
 				<div class="puff__item" style="background-image: url('imgs/fig7.jpg')"></div>
 				<div class="puff__item" style="background-image: url('imgs/fig1.jpg')"></div>
 		</figure>
-		<div class="divider-bottom"></div>
+		<div class="divider-bottom--grey"></div>
 	</header>
 
 	<main>
 		<section style="height: auto; position: relative;">
-			<div class="divider-top"></div>
+			<div class="divider-top--grey"></div>
 				<section class="col-container">
 					<article class="col-d-6 margin">
 						<h1 class="about__heading">Om oss</h1>
@@ -57,6 +57,7 @@
 		</section>
 
 		<section style="height: auto; position: relative;">
+			<div class="divider-top"></div>
 				<section class="col-container">
 					<article class="col-d-12 margin">
 						<h1 class="about__heading">Våra kunder</h1>
@@ -76,6 +77,8 @@
 				</section> 
 			<div class="divider-bottom"></div>
 		</section>
+
+		<?php include 'contact.php'; ?>
 	</main>
 </body>
 </html>

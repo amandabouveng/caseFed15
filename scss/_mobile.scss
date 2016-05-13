@@ -44,7 +44,6 @@
 	background-size: cover;
 	overflow: hidden;
 }
-
 .divider-top{
 	position: absolute;
 	background: linear-gradient(-3deg, transparent 70%, white 0%); 
@@ -52,10 +51,25 @@
 	height: 32vh;
 	width: 100vw;
 }
-.divider-bottom {
+.divider-bottom{
 	position: absolute;
 	height: 32vh;
 	background: linear-gradient(177deg, transparent 70%, white 0%); 
+	z-index: 2000;
+	width: 100vw;
+	bottom: 0;
+}
+.divider-top--grey{
+	position: absolute;
+	background: linear-gradient(-3deg, transparent 70%, $primaryGrey 0%); 
+	z-index: 2000;
+	height: 32vh;
+	width: 100vw;
+}
+.divider-bottom--grey {
+	position: absolute;
+	height: 32vh;
+	background: linear-gradient(177deg, transparent 70%, $primaryGrey 0%); 
 	z-index: 2000;
 	width: 100vw;
 	bottom: 0;
