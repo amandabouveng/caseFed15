@@ -240,7 +240,7 @@ body {
 .divider-top--yellow {
   position: absolute;
   background: linear-gradient(-3deg, transparent 70%, #fbe100 0%);
-  z-index: 2000;
+  z-index: 900;
   height: 32vh;
   width: 100vw; }
 
@@ -248,7 +248,7 @@ body {
   position: absolute;
   height: 32vh;
   background: linear-gradient(177deg, transparent 70%, #fbe100 0%);
-  z-index: 2000;
+  z-index: 900;
   width: 100vw;
   bottom: 0;
   width: 100%; }
@@ -256,7 +256,7 @@ body {
 .divider-top, .divder-top--transparent, .divider-top--case-contact {
   position: absolute;
   background: linear-gradient(-3deg, transparent 70%, white 0%);
-  z-index: 2000;
+  z-index: 900;
   height: 32vh;
   width: 100vw; }
 
@@ -264,7 +264,7 @@ body {
   position: absolute;
   height: 32vh;
   background: linear-gradient(177deg, transparent 70%, white 0%);
-  z-index: 2000;
+  z-index: 900;
   width: 100vw;
   bottom: 0;
   width: 100%; }
@@ -275,7 +275,7 @@ body {
 .divider-top--grey {
   position: absolute;
   background: linear-gradient(-3deg, transparent 70%, #4a4a49 0%);
-  z-index: 2000;
+  z-index: 900;
   height: 32vh;
   width: 100vw; }
 
@@ -283,14 +283,14 @@ body {
   position: absolute;
   height: 32vh;
   background: linear-gradient(177deg, transparent 70%, #4a4a49 0%);
-  z-index: 2000;
+  z-index: 900;
   width: 100vw;
   bottom: 0; }
 
 .divider-top--header {
   position: absolute;
   background: linear-gradient(-3deg, transparent 70%, white 0%);
-  z-index: 2000;
+  z-index: 900;
   height: 40vh;
   width: 100vw; }
 
@@ -391,12 +391,25 @@ body {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ffffff; }
+    font-size: 2.4em;
+    color: #ffffff;
+    margin: 0.9375em auto; }
   .hero .intro__caption {
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ffffff; }
+    color: #ffffff;
+    /* .first:hover, .first:focus {
+    	background-color: $accentOrange;
+    }
+    .second:hover, .second:focus {
+    	background-color: $accentYellow;
+    }
+    .third:hover, .third:focus {
+    	background-color: $accentBlue;
+    }*/ }
+    .hero .intro__caption span {
+      padding: 0.3125em; }
   .hero .slice-bottom {
     position: absolute;
     bottom: 0;
@@ -449,7 +462,21 @@ body {
   .single .single__image img {
     width: 100%;
     height: auto; }
+  .single .mission {
+    color: #e84e0f; }
+  .single .solution {
+    color: #fbe100; }
+  .single .result {
+    color: #00b4d5; }
 
+.case-gallery .case-gallery__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 9999;
+  color: #e84e0f;
+  text-align: center; }
 .case-gallery img {
   width: 100%;
   height: auto; }
@@ -463,7 +490,7 @@ body {
   min-height: 100vh;
   padding-top: 6.25em;
   padding-bottom: 6.25em;
-  background-color: #fbe100;
+  background-color: #00b4d5;
   color: #ffffff; }
   .case-contact::after {
     clear: both;
@@ -497,11 +524,11 @@ body {
       margin-bottom: 0.9375em; }
     .case-contact .case-contact__form label {
       font-size: 1.2em;
-      color: #fbe100; }
+      color: #00b4d5; }
     .case-contact .case-contact__form input, .case-contact .case-contact__form button {
       width: 100%;
       padding: 0.625em;
-      background-color: #fbe100;
+      background-color: #00b4d5;
       border: none;
       border-radius: 0.1875em; }
       .case-contact .case-contact__form input:focus, .case-contact .case-contact__form button:focus {
@@ -520,11 +547,11 @@ body {
     .case-contact .case-contact__form input {
       font-size: 0.9em; }
     .case-contact .case-contact__form button {
-      background-color: #fbe100;
+      background-color: #00b4d5;
       color: #ffffff;
       font-size: 0.9em; }
       .case-contact .case-contact__form button:hover, .case-contact .case-contact__form button:focus {
-        background-color: #00a470; }
+        background-color: #fbe100; }
 
 .costumers {
   background-repeat: no-repeat;
