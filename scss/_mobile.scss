@@ -6,7 +6,10 @@
 		@else { @include omega; }
 	}
 }
-
+body {
+	position: absolute;
+	top: 0;
+}
 .section-container {
 	height: 80vh;
 	position: relative;
@@ -16,7 +19,7 @@
 .main-nav {
 		width: 100vw;
 	ul{
-		margin: $margin-h/4 $margin-w ;
+		padding: $padding-h/4 $padding-w;
 	}
 	ul li {
 		padding-right: 2.5%;
@@ -44,6 +47,26 @@
 	background-size: cover;
 	overflow: hidden;
 }
+
+.divider-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: em(90);
+	background: linear-gradient(to left top, transparent 49.8%, #ffffff 50%);
+	width: 100vw;
+}
+.divder-top--transparent {
+	@extend .divider-top;
+	background: transparent;
+}
+.divider-top--case-contact {
+	@extend .divider-top;
+	background: $accentGreen;
+}
+.divider-bottom {
+	position: absolute;
+}
 .divider-top{
 	position: absolute;
 	background: linear-gradient(-3deg, transparent 70%, white 0%); 
@@ -58,6 +81,13 @@
 	z-index: 2000;
 	width: 100vw;
 	bottom: 0;
+	width: 100%;
+	height: em(90);
+	background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
+}
+.divider-bottom--case-contact {
+	@extend .divider-bottom;
+	background: $accentGreen;
 }
 .divider-top--grey{
 	position: absolute;
@@ -116,7 +146,7 @@
 	padding-top: $gutter/2;
 	padding-bottom: $gutter/2; 
 	width: 100%;
-	margin-top: $margin-h/2;
+	margin-top: $padding-h/2;
 }
 
 .icons__section {
@@ -144,13 +174,14 @@
 .hero {
 	@include outer-container;
 	position: relative;
+	max-width: 100vw;
 	height: 75vh;
 	background: url('../imgs/case_sibylla/sibylla_hero.jpg') no-repeat center center;
 	background-size: cover;
-	text-align: center;
 	.intro {
 		position: relative;
 		top: 16vh;
+		text-align: center;
 	}
 	.intro__logo img {
 		width: 20vw;
@@ -183,7 +214,10 @@
 		margin-bottom: em(10);
 	}
 	.single__icon {
+		position: relative;
 		text-align: center;
+		width: em(140);
+		margin: 0 auto;
 	}
 	.single__heading {
 		@include subHeading;
@@ -195,13 +229,111 @@
 		@include omega;
 		@include bodyText;
 		color: $primaryGrey;
-		margin-bottom: em(20);
+		float: none;
+		margin: 0 auto;
+		margin-bottom: em(90);
+		max-width: em(700);
+		&:last-child {
+			margin-right: auto;
+		}
 	}
 	.single__image img {
 		width: 100%;
 		height: auto;
 	}
 }
+.case-gallery {
+	& img {
+		width: 100%;
+		height: auto;
+	}
+}
+.case-contact {
+	@include outer-container;
+	position: relative;
+	max-width: 100vw;
+	min-height: em(300);
+	padding-top: em(100);
+	padding-bottom: em(100);
+	background-color: $primaryGrey;
+	color: #ffffff;
+	.case-contact__heading {
+		@include mainHeading;
+		text-align: center;
+		margin-bottom: em(15);
+	}
+	.case-contact__portrait img {
+		width: 100%;
+		height: auto;
+	}
+	.case-contact__contactinfo {
+		& :first-child {
+			// margin-top: em(16);
+		}
+		& > p {
+			font-size: em(16);
+		}
+		& > p a {
+			color: #ffffff;
+		}
+		.contactinfo__name {
+			font-weight: 800;
+		}
+	}
+	.case-contact__qoute {
+		margin-top: em(15);
+		& p {
+			font-size: em(20);
+			font-style: italic;
+		}
+	}
+	.case-contact__form {
+		background-color: $accentYellow;
+		padding: em(15);
+		& * {
+			display: block;
+			margin-bottom: em(15);
+		}
+		label {
+			font-size: 1.2em;
+		}
+		input, button {
+		    width: 100%;
+		    padding: em(10);
+		    background-color: #ffffff;
+		    border: none;
+		    border-radius: em(3);
+		    &:focus {
+		    	border-color: $accentOrange;
+		    	box-shadow: none;
+		    }
+		    &::-webkit-input-placeholder {
+			   color: $accentGreen;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			   color: $accentGreen;  
+			}
+			&::-moz-placeholder {  /* Firefox 19+ */
+			   color: $accentGreen;  
+			}
+			&:-ms-input-placeholder {  
+			   color: $accentGreen;  
+			}
+		}
+		input {
+			font-size: 0.9em;
+		}
+		button {
+			background-color: #ffffff;
+			color: $accentGreen;
+			font-size: 0.9em;
+			&:hover, &:focus {
+				//background-color: $accentOrange;
+			}
+		}
+	}
+}
+
 .costumers{
 	background-repeat: no-repeat;
 	background-position: center center;

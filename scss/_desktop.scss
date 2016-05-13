@@ -44,7 +44,7 @@
 
 .hero {
     .intro {
-        top: 20vh;
+        top: 10vh;
     }
     .intro__logo img {
         width: 30vw;
@@ -65,12 +65,61 @@
     max-width: em(960);
 }
 
-.contact__form {
-    padding-right: $margin-w*2;
+.case-contact {
+  position: relative;
+  .col-row {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: em(200);
+  }
+  .case-contact__heading {
+  }
+  .case-contact__portrait img {
+  }
+  .case-contact__contactinfo {
+    & :first-child {
+      margin-top: em(20);
+    }
+    & > p {
+      font-size: em(24);
+    }
+    & > p a {
+      font-size: 0.8em;
+    }   
+  }
+  .case-contact__qoute {
+    p {
+      margin-top: 0.6em;
+    }
+  }
+  .case-contact__form {
+    padding: em(15);
+    & * {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    label {
+      width: 20%;
+      text-align: center;
+      margin: 0;
+      margin-right: 2%;
+    }
+    input {
+      font-size: 0.9em;
+      width: 50%;
+      margin-right: 2%;
+    }
+    button {
+      width: 25%;
+    }
+  }
 }
-
+.contact__form {
+    padding-right: $padding-w*2;
+}
 .footer {
-    padding-left: $margin-w;
+    padding-left: $padding-w;
     padding-top: 0;
     clear: both;
 }
