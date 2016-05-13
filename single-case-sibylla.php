@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>United Retail - Case: Sibylla Bubtcher's Plate</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Custom Fonts -->
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+<?php include 'head.php'; ?>
 <body>
 	<section class="hero hero--sibylla">
 		<div class="intro">

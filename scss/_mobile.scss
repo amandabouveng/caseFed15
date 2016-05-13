@@ -16,7 +16,7 @@
 .main-nav {
 		width: 100vw;
 	ul{
-		margin: 2% 5% ;
+		margin: $margin-h/4 $margin-w ;
 	}
 	ul li {
 		padding-right: 2.5%;
@@ -65,9 +65,10 @@
 	display: none;
 }
 
-.about {
-	@include outer-container;
-	width: 100vw;
+.margin {
+	padding-top: $margin-h;
+	padding-right: $margin-w;
+	padding-left: $margin-w;
 }
 
 .about__heading{
@@ -93,6 +94,7 @@
 	padding-top: $gutter/2;
 	padding-bottom: $gutter/2; 
 	width: 100%;
+	margin-top: $margin-h/2;
 }
 
 .icons__section {
