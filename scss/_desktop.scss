@@ -64,3 +64,13 @@
 .single {
     max-width: em(960);
 }
+
+.contact__form {
+    padding-right: $margin-w*2;
+}
+
+.footer {
+    padding-left: $margin-w;
+    padding-top: 0;
+    clear: both;
+}

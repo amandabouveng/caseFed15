@@ -393,6 +393,103 @@ table {
 #us {
   display: none; }
 
+.contact {
+  background-color: #4a4a49;
+  color: #FFFFFF; }
+  .contact i {
+    color: #e84e0f;
+    font-size: 1.8rem; }
+
+.contact__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10vw; }
+
+.contact__tagline {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 0.809em; }
+
+.contact__address {
+  padding-left: 3vW; }
+  .contact__address figure {
+    float: left;
+    display: inline-block;
+    margin-right: 1.618em;
+    margin-bottom: 1.618em;
+    margin-top: 0.53933em;
+    height: 1rem;
+    clear: both; }
+  .contact__address figcaption {
+    float: left;
+    display: inline-block;
+    margin-top: 0.53933em;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: middle; }
+  .contact__address p {
+    clear: both;
+    margin-top: 0.809em; }
+
+.social {
+  padding-top: 1.618em;
+  margin-bottom: 10vw; }
+  .social i {
+    margin-right: 0.809em; }
+
+.contact__form {
+  color: #000000;
+  padding-right: 3vW; }
+  .contact__form label {
+    display: none; }
+  .contact__form input {
+    background-color: #e84e0f;
+    color: #000000;
+    border: 0;
+    height: 2rem;
+    margin-bottom: 0.809em;
+    padding-left: 0.4045em;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    /*&:last-child {
+    	margin-right: 0 !important;
+    }*/ }
+  .contact__form ::-webkit-input-placeholder {
+    color: #000000; }
+  .contact__form :-moz-placeholder {
+    /* Firefox 18- */
+    color: #000000; }
+  .contact__form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000000; }
+  .contact__form :-ms-input-placeholder {
+    color: #000000; }
+  .contact__form textarea {
+    border: 0;
+    margin-bottom: 0.809em;
+    background-color: #e84e0f;
+    color: #000000;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding-left: 0.4045em;
+    height: 6.472em; }
+
+.form__button {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  float: right; }
+
+.footer {
+  padding-left: 3vW;
+  padding-top: 10vw;
+  clear: both; }
+
 @media screen and (min-width: 770px) {
   .col-t-1 {
     float: left;
@@ -711,7 +808,15 @@ table {
     height: 7.5em; }
 
   .single {
-    max-width: 60em; } }
+    max-width: 60em; }
+
+  .contact__form {
+    padding-right: 6vW; }
+
+  .footer {
+    padding-left: 3vW;
+    padding-top: 0;
+    clear: both; } }
 html {
   font-size: 1rem; }
 
