@@ -24,11 +24,13 @@
 
 .section-container {
 	height: 80vh;
+	width: 100vw;
+	overflow: hidden;
 }
 
 .puff {
 	height: 25%;
-	width: 110%;
+	width: 108%;
 	.puff__item {
 		@include span-columns(3);
 		@include omega;
