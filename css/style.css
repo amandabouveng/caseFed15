@@ -190,7 +190,7 @@ table {
 .main-nav {
   width: 100vw; }
   .main-nav ul {
-    margin: 2% 5%; }
+    margin: 2.5vw 3vW; }
   .main-nav ul li {
     padding-right: 2.5%;
     display: inline-block;
@@ -232,29 +232,32 @@ table {
   position: absolute;
   background: linear-gradient(-3deg, transparent 70%, white 0%);
   z-index: 2000;
-  height: 35vh;
+  height: 30vh;
   width: 100vw; }
 
 .divider-bottom {
   position: absolute;
-  height: 35vh;
+  height: 30vh;
   background: linear-gradient(177deg, transparent 70%, white 0%);
   z-index: 2000;
   width: 100vw;
   bottom: 0; }
 
+.divider-top--header {
+  position: absolute;
+  background: linear-gradient(-3deg, transparent 70%, white 0%);
+  z-index: 2000;
+  height: 40vh;
+  width: 100vw; }
+
 .hide-mobile {
   display: none; }
 
-.about {
-  max-width: 2000px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100vw; }
-  .about::after {
-    clear: both;
-    content: "";
-    display: table; }
+.margin {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  padding-right: 3vW;
+  padding-left: 3vW; }
 
 .about__heading {
   font-size: 1.5rem;
@@ -273,61 +276,20 @@ table {
 .about__image {
   display: none; }
 
-<<<<<<< HEAD
-.outline {
-  outline: 1px solid black; }
-
-.business {
-  max-width: 2000px;
-  margin-left: auto;
-  margin-right: auto; }
-  .business::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-=======
->>>>>>> refs/remotes/origin/master
 .business__heading {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   color: #e84e0f;
-<<<<<<< HEAD
-  padding: 5%; }
-
-.icons {
-  max-width: 2000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px; }
-  .icons::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.icons__section {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-  text-align: center; }
-  .icons__section:last-child {
-    margin-right: 0; }
-  .icons__section:nth-child(3n) {
-    margin-right: 0; }
-  .icons__section:nth-child(3n+1) {
-    clear: left; }
-=======
   padding-top: 0.809em;
   padding-bottom: 0.809em;
-  width: 100%; }
+  width: 100%;
+  margin-top: 5vw; }
 
 .icons__section {
   text-align: center;
   padding: 1%; }
->>>>>>> refs/remotes/origin/master
 
 .icons__image--caption {
   font-size: 0.875rem;
@@ -338,7 +300,7 @@ table {
   text-align: center; }
 
 .col-container {
-  max-width: 2000px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.618em; }
@@ -356,7 +318,7 @@ table {
     display: table; }
 
 .hero {
-  max-width: 2000px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -374,7 +336,7 @@ table {
   .hero .intro__logo img {
     width: 20vw;
     height: auto;
-    margin: o auto; }
+    margin: 0 auto; }
   .hero .intro__heading {
     font-size: 1.5rem;
     font-weight: 700;
@@ -393,7 +355,7 @@ table {
     background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%); }
 
 .single {
-  max-width: 2000px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   width: 100vw;
@@ -513,7 +475,7 @@ table {
       margin-right: 0; }
 
   .col-container {
-    max-width: 2000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0; }
@@ -672,10 +634,9 @@ table {
     .col-d-12:nth-child(1n) {
       margin-right: 0; }
 
-<<<<<<< HEAD
   .omega {
-    margin-right: 0; } }
-=======
+    margin-right: 0; }
+
   #us {
     display: block; }
 
@@ -724,7 +685,6 @@ table {
 
   .single {
     max-width: 60em; } }
->>>>>>> refs/remotes/origin/master
 html {
   font-size: 1rem; }
 
