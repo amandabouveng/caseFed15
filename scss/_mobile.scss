@@ -19,7 +19,7 @@ body {
 .main-nav {
 		width: 100vw;
 	ul{
-		padding: 2% 5%;
+		padding: $padding-h/4 $padding-w;
 	}
 	ul li {
 		padding-right: 2.5%;
@@ -54,12 +54,7 @@ body {
 	width: 100%;
 	height: em(90);
 	background: linear-gradient(to left top, transparent 49.8%, #ffffff 50%);
-
-	/* position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, white 0%); 
-	z-index: 2000;
-	height: 35vh;
-	width: 100vw; */
+	width: 100vw;
 }
 .divder-top--transparent {
 	@extend .divider-top;
@@ -75,26 +70,28 @@ body {
 	width: 100%;
 	height: em(90);
 	background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
-
-	/* position: absolute;
-	height: 35vh;
-	background: linear-gradient(177deg, transparent 70%, white 0%); 
-	z-index: 2000;
-	width: 100vw;
-	bottom: 0; */
 }
 .divider-bottom--case-contact {
 	@extend .divider-bottom;
 	background: $accentGreen;
+}
+.divider-top--header{
+	position: absolute;
+	background: linear-gradient(-3deg, transparent 70%, white 0%); 
+	z-index: 2000;
+	height: 40vh;
+	width: 100vw;
 }
 
 .hide-mobile {
 	display: none;
 }
 
-.about {
-	@include outer-container;
-	width: 100vw;
+.margin {
+	padding-top: $margin-h;
+	padding-bottom: $margin-h;
+	padding-right: $margin-w;
+	padding-left: $margin-w;
 }
 
 .about__heading{
@@ -120,6 +117,7 @@ body {
 	padding-top: $gutter/2;
 	padding-bottom: $gutter/2; 
 	width: 100%;
+	margin-top: $padding-h/2;
 }
 
 .icons__section {
@@ -159,7 +157,7 @@ body {
 	.intro__logo img {
 		width: 20vw;
 		height: auto;
-		margin: o auto;
+		margin: 0 auto;
 	}
 	.intro__heading {
 		@include mainHeading;
@@ -318,4 +316,119 @@ body {
 	display: none;
 }
 
+.contact {
+    background-color: $primaryGrey;
+    color: #FFFFFF;
 
+   i {
+    color: $accentOrange;
+    font-size: 1.8rem;
+   }
+}
+
+.contact__heading {
+    @include mainHeading;
+   	padding-top: $margin-h;
+
+}
+
+.contact__tagline {
+    @include captionText;
+    padding-top: $gutter/2;
+}
+
+.contact__address {
+	padding-left: $margin-w;
+    figure {
+        float: left;
+        display: inline-block;
+        margin-right: $gutter;
+        margin-bottom: $gutter;
+        margin-top: $gutter/3;
+        height: 1rem;
+        clear: both;
+
+    }
+
+    figcaption {
+        float: left;
+        display: inline-block;
+        margin-top: $gutter/3;
+        @include subHeading;
+        text-align: middle;
+    }
+
+    p {
+        clear: both;
+        margin-top: $gutter/2;
+    }
+}
+
+.social {
+    padding-top: $gutter;
+    margin-bottom: $margin-h;
+
+    i {
+        margin-right: $gutter/2;
+    }
+}
+
+.contact__form {
+    color: #000000;
+    padding-right: $margin-w;
+    
+    label {
+        display: none;
+    }
+
+    input {
+        background-color: $accentOrange;
+        color: #000000;
+        border: 0;
+        height: 2rem;
+        margin-bottom: $gutter/2;
+     	//margin-right: 0.7em !important;
+        padding-left: $gutter/4;
+        @include bodyText;
+        /*&:last-child {
+        	margin-right: 0 !important;
+        }*/
+    }
+
+    ::-webkit-input-placeholder {
+        color: #000000;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: #000000;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color: #000000;
+    }
+
+    :-ms-input-placeholder {  
+        color: #000000;
+    }
+
+    textarea {
+        border: 0;
+        margin-bottom: $gutter/2;
+        background-color: $accentOrange;
+        color: #000000;
+        @include bodyText;
+        padding-left: $gutter/4;
+        height: $gutter*4;
+    }
+}
+
+.form__button {
+    @include captionText;
+    float: right;
+}
+
+.footer {
+	padding-left: $margin-w;
+	padding-top: $margin-h;
+    clear: both;
+}
