@@ -6,7 +6,7 @@
 				
 				<header class="margin">
 					<h1 class="contact__heading">Kontakta oss</h1>
-					<p class="contact__tagline">Vi vill höra från dig! Ring oss, besök oss, lämna ett meddelande.</p>
+					<p class="contact__tagline">Vi vill höra från dig! Ring oss, besök oss, twittra, lämna ett meddelande.</p>
 				</header>
 				<section class="contact__address col-m-12 col-d-6 ">
 					<figure><i class="fa fa-phone" aria-hidden="true"></i></figure>
@@ -24,13 +24,16 @@
 						<i class="fa fa-twitter" aria-hidden="true"></i>
 					</section>
 				</section>
+
 				<section class="contact__form col-m-12 col-d-6">
+
+					<h2 class="form__heading">Lämna ett meddelande</h2>
 					<form action="" method="post" id="contact" class="contact-form">
 					
 						<label for="name" placeholder="Namn">Namn</label>
-						<input type="text" name="name" id="name" placeholder="Namn" class="col-m-12 col-d-4">
+						<input type="text" name="name" id="name" style="margin-right: 0.7em;"placeholder="Namn" class="col-m-12 col-d-4">
 						<label for="email">Mejladress</label>
-						<input type="text" name="email" id="email" placeholder="Mejladress" class="col-m-12 col-d-4">
+						<input type="text" name="email" id="email" style="margin-right: 0.7em;"  placeholder="Mejladress" class="col-m-12 col-d-4">
 						<label for="tel">Telefon</label>
 						<input type="tel" name="tel" id="tel" placeholder="Telefon" class="col-m-12 col-d-4">
 						<label for="message">Meddelande</label>

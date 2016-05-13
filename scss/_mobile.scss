@@ -238,7 +238,6 @@ body {
 		background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
 	}
 }
-
 .single {
 	@include outer-container;
 	width: 100vw;
@@ -408,8 +407,7 @@ body {
 
 .contact__heading {
     @include mainHeading;
-   	padding-top: $margin-h;
-
+   	padding-top: $gutter;
 }
 
 .contact__tagline {
@@ -434,7 +432,7 @@ body {
         float: left;
         display: inline-block;
         margin-top: $gutter/3;
-        @include subHeading;
+        @include captionText;
         text-align: middle;
     }
 
@@ -442,6 +440,12 @@ body {
         clear: both;
         margin-top: $gutter/2;
     }
+}
+.form__heading {
+	@include captionText;
+    text-align: middle;
+    padding-bottom: $margin-h/4;
+    color: #FFFFFF;
 }
 
 .social {
@@ -455,7 +459,6 @@ body {
 
 .contact__form {
     color: #000000;
-    padding-right: $margin-w;
     
     label {
         display: none;
@@ -467,12 +470,8 @@ body {
         border: 0;
         height: 2rem;
         margin-bottom: $gutter/2;
-     	//margin-right: 0.7em !important;
         padding-left: $gutter/4;
         @include bodyText;
-        /*&:last-child {
-        	margin-right: 0 !important;
-        }*/
     }
 
     ::-webkit-input-placeholder {
