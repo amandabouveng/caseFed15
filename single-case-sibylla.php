@@ -13,7 +13,7 @@
 			<figure class="intro__logo">
 				<img src="imgs/case_sibylla/sibylla-logo.svg" alt="">
 			</figure>
-			<h2 class="intro__heading">Sibylla Butcher's Plate</h2>
+			<h2 class="intro__heading">Butcher's Plate</h2>
 			<p class="intro__caption">Lanseringsstrategi, Konceptutveckling,
 		Designstrategi.</p>
 		</div>
@@ -89,8 +89,12 @@
 		
 		<div class="divider-bottom"></div>
 	</section>
+	
+	<section class="section-container">
+		<?php include 'highlight-area.php'; ?>
+	</section>
 
-	<?php include 'highlight-area.php'; ?>
+	<?php include 'contact.php'; ?>
 	
 </body>
 </html>
