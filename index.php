@@ -14,6 +14,7 @@
 				<li>Hem</li>
 				<li>Case</li>
 				<li>Feed</li>
+				<li>Kontakt</li>
 			</ul>
 		</nav>
 
