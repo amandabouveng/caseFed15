@@ -50,17 +50,17 @@
 						</div>
 					</article>
 					<article class="col-d-6">
-						<div id="us" style="background-image: url('office.jpg'); margin-left: 10px; background-position: center center; background-size: cover; height: 100vh;"></div>
+						<div id="us" style="background-image: url('office.jpg'); margin-left: 10px; background-position: center center; background-size: cover; height: 130vh;"></div>
 					</article>
 					</section>
-			<div class="divider-bottom"></div>
+			<div class="divider-bottom--yellow"></div>
 		</section>
 
-		<section style="height: auto; position: relative;">
-			<div class="divider-top"></div>
+		<section style="height: auto; position: relative;" class="costumers">
+			<div class="divider-top--yellow"></div>
 				<section class="col-container">
 					<article class="col-d-12 margin">
-						<h1 class="about__heading">Våra kunder</h1>
+						<h1 class="about__heading about__heading--white">Våra kunder</h1>
 						<section class="col-container">
 							<figure class="col-m-6 col-d-3"><img src="imgs/custom1.jpg"></figure>
 							<figure class="col-m-6 col-d-3"><img src="imgs/custom2.jpg"></figure>
@@ -75,7 +75,6 @@
 						</section>
 					</article>
 				</section> 
-			<div class="divider-bottom"></div>
 		</section>
 
 		<?php include 'contact.php'; ?>

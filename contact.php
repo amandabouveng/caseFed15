@@ -1,7 +1,7 @@
 
 
 		<section style="height: auto; position: relative;">
-			<div class="divider-top"></div>
+			<div class="divider-top--yellow"></div>
 			<section class="col-container contact margin col-m-12 col-d-12">
 				
 				<header class="margin">
