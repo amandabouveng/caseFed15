@@ -8,13 +8,8 @@
       }
 }
 
-.col-container {
-	@include outer-container;
-	padding: $gutter;
-}
 
-.col-row {
-	@include row;
-	padding: .2em 0;
-}
 
+.omega {
+	@include omega;
+}
