@@ -201,7 +201,7 @@ body {
 	@include outer-container;
 	position: relative;
 	max-width: 100vw;
-	height: 90vh;
+	min-height: em(600);
 	background: url('../imgs/case_sibylla/sibylla_hero.jpg') no-repeat center center;
 	background-size: cover;
 	.intro {
@@ -280,15 +280,24 @@ body {
 		width: 100%;
 		height: auto;
 	}
-	.mission {
-		color: $accentOrange;
-	}
-	.solution {
+	.strategy {
 		color: $accentYellow;
 	}
-	.result {
+	.creation {
 		color: $accentBlue;
 	}
+	.result {
+		color: $accentOrange;
+	}
+}
+.strategy {
+	color: $accentYellow;
+}
+.creation {
+	color: $accentBlue;
+}
+.result {
+	color: $accentOrange;
 }
 .case-gallery {
 	.case-gallery__heading {
@@ -308,9 +317,9 @@ body {
 	@include outer-container;
 	position: relative;
 	max-width: 100vw;
-	min-height: 100vh;
-	padding-top: em(100);
-	padding-bottom: em(100);
+	height: em(1000);
+	padding-top: em(160);
+	padding-bottom: em(160);
 	background-color: $accentBlue;
 	color: #ffffff;
 	.case-contact__heading {
@@ -849,7 +858,9 @@ body {
 	position: absolute;
 	top: 0;
 	width: 100vw;
-	height: em(120);
+	height: em(200);
+	padding: 0 50px 0 0;
+	margin: 0 0 0 0;
 	background: linear-gradient( -7deg, transparent 49.8%, #ffffff 50%);
 }
 .divider-top--header {
@@ -879,7 +890,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	width: 100vw;
-	height: em(120);
+	height: em(200);
 	background: linear-gradient( 173deg, transparent 49.8%, #ffffff 50%);
 }
 .divider-bottom--yellow {

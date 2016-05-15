@@ -6,7 +6,7 @@
 				<li><img src="imgs/logo-menu.svg" alt=""><li>
 				<li><a href="index.php>">Hem</a></li>
 				<li><a href="single-case-sibylla.php">Case</a></li>
-				<li>Feed</li>
+				<li>Just nu</li>
 				<li>Kontakt</li>
 			</ul>
 		</nav>
@@ -25,22 +25,22 @@
 	</header>
 
 	<article class="single">
-		<figure class="single__icon" alt="Icon of a hand.">
-			<img src="hand_red.svg" alt="">
-		</figure>
-		<h1 class="single__heading mission">Uppdrag</h1>
-		<p class="single__paragraph">Intresset för korv av bättre kvalitet har ökat markant under de senaste åren. Men i den rådande korvtrenden är det inte bara kvalitet som efterfrågas utan nyfikenheten för nya smaker/varianter är stor. Sibylla ville därför lansera ett nytt koncept där kunden själv får välja mellan olika mindre stekkorvar av hög kvalitet. Ett nytt sätt att äta korv helt enkelt där man själv kan kombinera de korvar och tillbehör man tycker bäst om. Retail United fick i uppgift att namnge, ta fram en grafisk symbol och införsäljningsmaterial för konceptet.</p>
-		
 		<figure class="single__icon" alt="Icon of a cloud.">
 			<img src="cloud_yellow.svg" alt="">
 		</figure>
-		<h1 class="single__heading solution">Lösning</h1>
-		<p class="single__paragraph">Utmaningen var att hitta ett namn på konceptet och ta fram en symbol som signalerar premiumkorv, skapar intresse i servicehandeln och som hjälper slutkonsumenten att förstå och tycka om erbjudandet. Resultatet blev Butcher’s Plate!</p>
+		<h1 class="single__heading strategy">Insikt &amp; Strategi</h1>
+		<p class="single__paragraph">Intresset för korv av bättre kvalitet har ökat markant under de senaste åren. Men i den rådande korvtrenden är det inte bara kvalitet som efterfrågas utan nyfikenheten för nya smaker/varianter är stor. Sibylla ville därför lansera ett nytt koncept där kunden själv får välja mellan olika mindre stekkorvar av hög kvalitet. Ett nytt sätt att äta korv helt enkelt där man själv kan kombinera de korvar och tillbehör man tycker bäst om. Retail United fick i uppgift att namnge, ta fram en grafisk symbol och införsäljningsmaterial för konceptet.</p>
 		
 		<figure class="single__icon" alt="Icon for a explosion.">
 			<img src="star_blue.svg" alt="">
 		</figure>
-		<h1 class="single__heading result">Resultat</h1>
+		<h1 class="single__heading creation">Kreation</h1>
+		<p class="single__paragraph">Utmaningen var att hitta ett namn på konceptet och ta fram en symbol som signalerar premiumkorv, skapar intresse i servicehandeln och som hjälper slutkonsumenten att förstå och tycka om erbjudandet. Resultatet blev Butcher’s Plate!</p>
+		
+		<figure class="single__icon" alt="Icon of a hand.">
+			<img src="hand_red.svg" alt="">
+		</figure>
+		<h1 class="single__heading result">Genomförande</h1>
 		<p class="single__paragraph">7-Eleven beslutade sig för att lansera konceptet och ge sina kunder en möjlighet att ta del av det nya spännande erbjudandet. Man genomförde en betydande kampanj i sina butiker och lyfte Butcher’s Plate på sina food trucks. Butcher’s Plate bidrar nu på flera ställen till att visa att Sibylla är ett modernt och innovativt företag, som aktivt jobbar med produktutveckling och har näsa för de globala mattrenderna.</p>
 		
 	</article>
