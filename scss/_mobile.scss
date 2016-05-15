@@ -479,8 +479,11 @@ body {
 }
 
 .ip-loader {
-	bottom: 20%;
-
+	bottom: 35%;
+}
+.ip-loader p {
+	color: white;
+	text-align: center;
 }
 
 .ip-header .ip-inner {

@@ -1,33 +1,47 @@
-/*
-* Logo color animation
-*/
+// Logo color animation
+ 
 #logo {
-	-webkit-animation: changecolor 4s ease infinite;
-	-moz-animation: changecolor 4s ease infinite;
-	animation: changecolor 4s ease infinite;
+	-webkit-animation: changefillcolor 4s ease infinite;
+	-moz-animation: changefillcolor 4s ease infinite;
+	animation: changefillcolor 4s ease infinite;
 }
 
 #nav-logo {
-	-webkit-animation: changecolor 20s ease infinite;
-	-moz-animation: changecolor 20s ease infinite;
-	animation: changecolor 20s ease infinite;
+	-webkit-animation: changefillcolor 20s ease infinite;
+	-moz-animation: changefillcolor 20s ease infinite;
+	animation: changefillcolor 20s ease infinite;
 }
+
+<<<<<<< HEAD
 	
+@-webkit-keyframes changefillcolor {
+=======
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	&:visited {
+		color: #ffffff;
+	}
+	&:hover {
+		border-bottom: em(2) solid #ffffff;
+	}
+}
 @-webkit-keyframes changecolor {
+>>>>>>> refs/remotes/origin/master
 	0%{fill:#00a470}
     25%{fill:#00b4d5}
     50%{fill:#e84e0f}
     75%{fill:#fbe100;}
     100%{fill:#00a470}
 }
-@-moz-keyframes changecolor {
+@-moz-keyframes changefillcolor {
     0%{fill:#00a470}
     25%{fill:#00b4d5}
     50%{fill:#e84e0f}
     75%{fill:#fbe100;}
     100%{fill:#00a470}
 }
-@keyframes changecolor { 
+@keyframes changefillcolor { 
     0%{fill:#00a470}
     25%{fill:#00b4d5}
     50%{fill:#e84e0f}
@@ -35,7 +49,27 @@
     100%{fill:#00a470}
 }
 
-
+@-webkit-keyframes changestrokecolor {
+	0%{stroke:#00a470}
+    25%{stroke:#00b4d5}
+    50%{stroke:#e84e0f}
+    75%{stroke:#fbe100;}
+    100%{stroke:#00a470}
+}
+@-moz-keyframes changestrokecolor {
+    0%{stroke:#00a470}
+    25%{stroke:#00b4d5}
+    50%{stroke:#e84e0f}
+    75%{stroke:#fbe100;}
+    100%{stroke:#00a470}
+}
+@keyframes changestrokecolor { 
+    0%{stroke:#00a470}
+    25%{stroke:#00b4d5}
+    50%{stroke:#e84e0f}
+    75%{stroke:#fbe100;}
+    100%{stroke:#00a470}
+}
 
 @for $i from 1 through 12 {
 	.col-m-#{$i} {
@@ -57,8 +91,10 @@ body {
 }
 
 .main-nav {
+	position: relative;
+	z-index: 999;
 	width: 100vw;
-	ul{
+	ul {
 		padding: $padding-h/4 $padding-w;
 	}
 	ul li {
@@ -69,16 +105,17 @@ body {
 		vertical-align: top;
 		line-height: 2.5rem;
 	}
-	img{
+	img {
 		height: 3em;
 	}
 }
-.puff{
+.puff {
 	height: 50%;
 	width: 103%;
 	@include row();
 
 	.puff__item {
+		position: relative;
 		height: 50%;
 		@include span-columns(6);
 		@include omega;
@@ -86,91 +123,19 @@ body {
 		background-position: center center;
 		background-size: cover;
 		overflow: hidden;
+		cursor: pointer;
+		p {
+			text-align: center;
+			vertical-align: middle;
+			line-height: 320px;
+			color: #ffffff;
+			font-size: 2em;
+		}
 	}
 }
 
-
-
 .omega {
 	@include omega;
-}
-
-.divider-top {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: em(90);
-	background: linear-gradient(to left top, transparent 49.8%, #ffffff 50%);
-	width: 100vw;
-}
-.divder-top--transparent {
-	@extend .divider-top;
-	background: transparent;
-}
-.divider-top--case-contact {
-	@extend .divider-top;
-	background: $accentGreen;
-}
-
-.divider-top--yellow{
-	position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, $accentYellow 0%); 
-	z-index: 900;
-	height: 32vh;
-	width: 100vw;
-}
-.divider-bottom--yellow{
-	position: absolute;
-	height: 32vh;
-	background: linear-gradient(177deg, transparent 70%, $accentYellow 0%); 
-	z-index: 900;
-	width: 100vw;
-	bottom: 0;
-	width: 100%;
-	//background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
-}
-.divider-top{
-	position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, white 0%); 
-	height: 20vh;
-	z-index: 900;
-	width: 100vw;
-}
-.divider-bottom{
-	position: absolute;
-	height: 20vh;
-	background: linear-gradient(177deg, transparent 70%, white 0%); 
-	z-index: 900;
-	width: 100vw;
-	bottom: 0;
-	width: 100%;
-	//background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
-}
-.divider-bottom--case-contact {
-	@extend .divider-bottom;
-	background: $accentGreen;
-}
-.divider-top--grey{
-	position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, $primaryGrey 0%); 
-	z-index: 900;
-	height: 32vh;
-	width: 100vw;
-}
-.divider-bottom--grey {
-	position: absolute;
-	height: 32vh;
-	background: linear-gradient(177deg, transparent 70%, $primaryGrey 0%); 
-	z-index: 900;
-	width: 100vw;
-	bottom: 0;
-}
-.divider-top--header{
-	position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, $primaryGrey 0%); 
-	z-index: 900;
-	height: 40vh;
-	width: 100vw;
 }
 
 .hide-mobile {
@@ -178,10 +143,7 @@ body {
 }
 
 .margin {
-	padding-top: $margin-h;
-	padding-bottom: $margin-h;
-	padding-right: $margin-w;
-	padding-left: $margin-w;
+	padding: 5em 5% 5em 5%;
 }
 
 .about__heading{
@@ -217,6 +179,7 @@ body {
 .icons__section {
 	text-align: center;
 	padding: 1%;
+	padding-bottom: em(105);
 }
 
 .icons__image--caption {
@@ -282,7 +245,7 @@ body {
 		bottom: 0;
 		width: 100%;
 		height: em(60);
-		background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
+		background: linear-gradient(173deg, transparent 49.8%, #ffffff 50%);
 	}
 }
 .single {
@@ -335,6 +298,7 @@ body {
 	.case-gallery__heading {
 		@include mainHeading;
 		position: relative;
+		padding: em(20);
 		z-index: 9999;
 		color: $accentOrange;
 		text-align: center;
@@ -430,7 +394,9 @@ body {
 		}
 	}
 }
-
+.switch-case {
+	display: none;
+}
 .costumers{
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -474,14 +440,21 @@ body {
 	min-height: 480px;
 	width: 100%;
 	height: 100%;
-	background: #f1f1f1;
-}
+	background: $primaryGrey;
 
-.ip-header h1 {
-	margin: 0 auto;
-}
+	* {
+		margin: .5em 0;
+	}
 
-.ip-logo,
+	h1 {
+		margin: 0 auto;
+	}
+	h2 {
+		text-align: center;
+		@include subHeading;
+		color: white;
+	}
+}
 .ip-loader {
 	position: absolute;
 	left: 0;
@@ -490,27 +463,29 @@ body {
 	cursor: default;
 	pointer-events: none;
 }
-
-.ip-logo {
-	top: 0;
-	height: 50%;
+.logo-path {
+	margin: 0 auto;
+}
+.ip-logot {
+	top: 30%;
+	height: 100%;
 	-webkit-transform: translate3d(0,25%,0);
 	transform: translate3d(0,25%,0);
 }
 
 .ip-loader {
 	bottom: 20%;
+
 }
 
 .ip-header .ip-inner {
 	display: block;
 	margin: 0 auto;
+	text-align: center;
 }
 
-.ip-header .ip-logo svg {
-	min-width: 320px;
-	max-width: 480px;
-	width: 25%;
+.ip-header .ip-logot svg {
+	text-align: center;
 }
 
 .ip-header .ip-loader svg path {
@@ -525,7 +500,9 @@ body {
 .ip-header .ip-loader svg path.ip-loader-circle {
 	-webkit-transition: stroke-dashoffset 0.2s;
 	transition: stroke-dashoffset 0.2s;
-	stroke: #ef6e7e;
+	-webkit-animation: changestrokecolor 4s ease infinite;
+	-moz-animation: changestrokecolor 4s ease infinite;
+	animation: changestrokecolor 4s ease infinite;
 }
 
 /* Content */
@@ -598,12 +575,12 @@ body {
 
 /* Initial animation of header elements */
 .loading {
-	.ip-logo, .ip-loader {
+	.ip-logot, .ip-loader {
 		opacity: 1;
 		-webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
 		animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
 	}
-
+	
 	.ip-loader {
 		-webkit-animation-delay: 0.2s;
 		animation-delay: 0.2s;
@@ -645,6 +622,12 @@ body {
 	}
 
 	/* Content animations */
+	
+	header.section-container nav {
+		-webkit-animation: animLoadedMavigation 1s cubic-bezier(0.7,0,0.3,1) both;
+		animation: animLoadedMavigation 1s cubic-bezier(0.7,0,0.3,1) both;
+	}
+	main,
 	.ip-main h2,
 	.ip-main .browser,
 	.ip-main .browser .box,
@@ -694,12 +677,20 @@ body {
 	animation-delay: 0.2s;
 }
 
+@-webkit-keyframes animLoadedMavigation {
+	from { opacity: 1; -webkit-transform: translate3d(0,600px,0); }
+}
+
+@keyframes animLoadedNavigation {
+	from { opacity: 1; -webkit-transform: translate3d(0,600px,0); transform: translate3d(0,600px,0); }
+}
+
 @-webkit-keyframes animLoadedContent {
-	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); }
+	from { opacity: 0; -webkit-transform: translate3d(0,50px,0); }
 }
 
 @keyframes animLoadedContent {
-	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); transform: translate3d(0,200px,0); }
+	from { opacity: 0; -webkit-transform: translate3d(0,50px,0); transform: translate3d(0,50px,0); }
 }
 
 /* Change layout class for header */
@@ -852,7 +843,88 @@ body {
 }
 
 .footer {
-	padding-left: $margin-w;
-	padding-top: $margin-h;
+	padding-left: $padding-w;
+	padding-top: $padding-h;
     clear: both;
+}
+
+// DIVIDERS
+.divider-top {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: em(120);
+	background: linear-gradient( -7deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-top--header {
+	@extend .divider-top;
+}
+.divder-top--transparent {
+	@extend .divider-top;
+	background: transparent;
+}
+.divider-top--case-contact {
+	@extend .divider-top;
+	background: $accentGreen;
+}
+.divider-top--yellow {
+	@extend .divider-top;
+	background: linear-gradient( -7deg, transparent 49.8%, $accentYellow 50%);
+}
+.divider-top--grey {
+	@extend .divider-top;
+	background: linear-gradient( -7deg, transparent 49.8%, $primaryGrey 50%);
+}
+.divider-top--header {
+	@extend .divider-top--grey;
+	background: linear-gradient( -7deg, transparent 49.8%, $primaryGrey 50%);
+}
+.divider-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: em(120);
+	background: linear-gradient( 173deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-bottom--yellow {
+	@extend .divider-bottom;
+	background: linear-gradient(173deg, transparent 49.8%, $accentYellow 50%);
+}
+.divider-bottom--case-contact {
+	@extend .divider-bottom;
+	background: $accentGreen;
+}
+.divider-bottom--grey {
+	@extend .divider-bottom;
+	background: linear-gradient(173deg, transparent 49.8%, $primaryGrey 50%); 
+}
+.divider-bottom--header {
+	@extend .divider-bottom;
+	//bottom: 123px;
+}
+
+// OVERLAY
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+}
+.overlayYellow {
+	@extend .overlay;
+	background-color: $accentYellow;
+}
+.overlayGreen {
+	@extend .overlay;
+	background-color: $accentGreen;
+}
+.overlayBlue {
+	@extend .overlay;
+	background-color: $accentBlue;
+}
+.overlayOrange {
+	@extend .overlay;
+	background-color: $accentOrange;
 }
