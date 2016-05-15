@@ -24,7 +24,7 @@
 		<header class="section-container">
 		<nav class="main-nav divider-top--header">
 			<ul>
-				<li><svg id="nav-logo" class="ip-inner" width="40px" height="40px" viewBox="30 0 150 300" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
+				<li><svg id="nav-logo" class="ip-inner" width="40px" height="40px" viewBox="0 0 300 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
 					<path class="logo-path" d="M76.6,0C34.4,0,0,33.9,0,75.5v100.4c0,57.7,47.7,104.7,106.3,104.7c58.6,0,106.3-47,106.3-104.7V74.8h-34.4v101.1
 				c0,38.8-32.3,70.3-71.9,70.3c-39.6,0-71.9-31.6-71.9-70.3V75.5c0-22.7,18.9-41.2,42.2-41.2c23.3,0,42.2,18.5,42.2,41.2v95.7
 				c0,6.6-5.6,12-12.5,12c-6.9,0-12.5-5.4-12.5-12V74.8H59.4v98.4c0,25.6,21,46.4,46.9,46.4c25.9,0,46.9-20.8,46.9-46.4V73.6
@@ -32,7 +32,7 @@
 				</svg></li>
 				<li><a href="index.php>">Hem</a></li>
 				<li><a href="single-case-sibylla.php">Case</a></li>
-				<li>Feed</li>
+				<li>Just nu</li>
 				<li>Kontakt</li>
 			</ul>
 		</nav>

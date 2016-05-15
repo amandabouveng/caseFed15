@@ -417,7 +417,7 @@ body {
   margin-right: auto;
   position: relative;
   max-width: 100vw;
-  height: 90vh;
+  min-height: 37.5em;
   background: url("../imgs/case_sibylla/sibylla_hero.jpg") no-repeat center center;
   background-size: cover; }
   .hero::after {
@@ -508,12 +508,21 @@ body {
   .single .single__image img {
     width: 100%;
     height: auto; }
-  .single .mission {
-    color: #e84e0f; }
-  .single .solution {
+  .single .strategy {
     color: #fbe100; }
-  .single .result {
+  .single .creation {
     color: #00b4d5; }
+  .single .result {
+    color: #e84e0f; }
+
+.strategy {
+  color: #fbe100; }
+
+.creation {
+  color: #00b4d5; }
+
+.result {
+  color: #e84e0f; }
 
 .case-gallery .case-gallery__heading {
   font-size: 2rem;
@@ -537,9 +546,9 @@ body {
   margin-right: auto;
   position: relative;
   max-width: 100vw;
-  min-height: 100vh;
-  padding-top: 6.25em;
-  padding-bottom: 6.25em;
+  height: 62.5em;
+  padding-top: 10em;
+  padding-bottom: 10em;
   background-color: #00b4d5;
   color: #ffffff; }
   .case-contact::after {
@@ -1000,7 +1009,9 @@ body {
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 7.5em;
+  height: 12.5em;
+  padding: 0 50px 0 0;
+  margin: 0 0 0 0;
   background: linear-gradient(-7deg, transparent 49.8%, #ffffff 50%); }
 
 .divider-top--opposite {
@@ -1028,7 +1039,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height: 7.5em;
+  height: 12.5em;
   background: linear-gradient(173deg, transparent 49.8%, #ffffff 50%); }
 
 .divider-bottom--yellow {
@@ -1304,6 +1315,9 @@ body {
   .margin {
     padding: 5em 5%; }
 
+  article.margin {
+    padding: 10em 5%; }
+
   #us {
     display: block; }
 
@@ -1339,6 +1353,7 @@ body {
   .icons__image--caption {
     padding-top: 0.809em; }
 
+<<<<<<< HEAD
   .right {
     float: right; }
 
@@ -1354,17 +1369,33 @@ body {
     font-size: 1.5em; }
   .hero .slice-bottom {
     height: 7.5em; }
+=======
+  .hero {
+    min-height: 60em; }
+    .hero .intro {
+      top: 10vh; }
+    .hero .intro__logo img {
+      width: 30vw;
+      height: auto;
+      margin: o auto; }
+    .hero .intro__heading {
+      font-size: 4em; }
+    .hero .intro__caption {
+      font-size: 1.5em; }
+    .hero .slice-bottom {
+      height: 7.5em; }
+>>>>>>> refs/remotes/origin/master
 
   .single {
     max-width: 60em; }
 
   .case-contact {
-    position: relative; }
+    position: relative;
+    min-height: 47.5em; }
     .case-contact .col-row {
       position: relative;
       margin: 0 auto;
-      max-width: 960px;
-      min-height: 12.5em; }
+      max-width: 960px; }
     .case-contact .case-contact__contactinfo :first-child {
       margin-top: 1.25em; }
     .case-contact .case-contact__contactinfo > p {
