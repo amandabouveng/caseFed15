@@ -13,6 +13,11 @@
 	padding: 0;
 }
 
+.right {
+	float:right;
+	margin-right: 1em;
+}
+
 .col-row {
 	@include row;
 	padding: .2em 0;

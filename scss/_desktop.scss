@@ -12,7 +12,7 @@
 	@include omega;
 }
 .margin {
-  padding: 7em 5%;
+  padding: 5em 5%;
 }
 #us{
 	display: block;
@@ -29,18 +29,25 @@
 
 .icons__section {
     text-align: center;
-    padding: $gutter;
+    padding: 1.5em;
+    p {
+    	font-size: .8rem;
+    }
 }
 
 .icons__image {
     img { 
-        width: 75%;
+        width:50%;
         height: auto;
     }
 }
 
 .icons__image--caption {
    padding-top: $gutter/2; 
+
+}
+.right {
+	float:right;
 
 }
 
@@ -141,6 +148,10 @@
   right: em(15);
 }
 
+.contact__header {
+    padding: $gutter;
+} 
+
 .contact__heading {
     @include mainHeading;
     padding-top: $gutter/2;
@@ -185,4 +196,10 @@
 }
 .divider-bottom--grey {
   background: linear-gradient(175deg, transparent 49.8%, $primaryGrey 50%); 
+}
+.divider-top--opposite {
+	background: linear-gradient( -175deg, #ffffff 49.8%, transparent 50%);
+}
+.divider-bottom--opposite {
+	background: linear-gradient( -175deg, transparent 49.8%, #ffffff 50%);
 }

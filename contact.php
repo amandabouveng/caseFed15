@@ -1,8 +1,8 @@
 	<section style="height: auto; position: relative;">
 		<div class="divider-bottom--grey"></div>
-		<section class="col-container contact margin col-m-12 col-d-12">
+		<section class="col-container contact col-m-12 col-d-12">
 			
-			<header class="margin">
+			<header class="contact__header">
 				<h1 class="contact__heading">Kontakta oss</h1>
 				<p class="contact__tagline">Vi vill höra från dig! Ring oss, besök oss, twittra, lämna ett meddelande.</p>
 			</header>

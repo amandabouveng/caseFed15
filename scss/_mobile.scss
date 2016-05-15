@@ -139,11 +139,23 @@ body {
 }
 
 .margin {
-	padding: 5em 5% 5em 5%;
+	padding: 2em 5% 5em 5%;
+}
+
+.right {
+	float:right;
+	padding: 0 2% 0 2%;
+	margin-right: 2%;
+	text-align: center;
+}
+
+.center {
+	margin: 0 auto;
+	width: 80%;
 }
 
 .about__heading{
-	@include mainHeading;
+	@include subHeading;
 	color: $accentOrange;
 	padding: 0 0 5% 0;
 }
@@ -174,7 +186,7 @@ body {
 
 .icons__section {
 	text-align: center;
-	padding: 1%;
+	padding: 0;
 	padding-bottom: em(105);
 }
 
@@ -184,7 +196,12 @@ body {
 	color: $primaryGrey;
 	text-align: center;
 }
-
+.icons__image {
+	img {
+		width: 60%;
+	}
+	
+}
 .col-container {
 	@include outer-container;
 	padding: $gutter;
@@ -402,6 +419,7 @@ body {
 }
 #us {
 	display: none;
+	background-image: url('office.jpg'); margin-left: 0px; background-position: center center; background-size: cover; width: 100vw; height: 70vh;
 }
 
 /*
@@ -595,10 +613,10 @@ body {
 
 /* Header elements when loading finishes */
 .loaded  {
-	.ip-logo, .ip-loader {
+	.ip-logot, .ip-loader {
 		opacity: 1;
 	}
-	.ip-logo {
+	.ip-logot {
 		-webkit-transform-origin: 50% 0;
 		transform-origin: 50% 0;
 		-webkit-animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
@@ -609,10 +627,11 @@ body {
 		animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 	}
 
-	.ip-logo svg path {
+	.ip-logot svg path, .ip-logot h2 {
 		-webkit-transition: all 0.5s ease 0.3s;
 		transition: all 0.5s ease 0.3s;
-		fill: #fff;
+		fill: transparent;
+		color: transparent;
 	}
 
 	.ip-header {
@@ -854,6 +873,14 @@ body {
 	width: 100vw;
 	height: em(120);
 	background: linear-gradient( -7deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-top--opposite {
+	@extend .divider-top;
+	background: linear-gradient( -170deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-bottom--opposite {
+	@extend .divider-bottom;
+	background: linear-gradient( 170deg, transparent 49.8%, #ffffff 50%);
 }
 .divider-top--header {
 	@extend .divider-top;
