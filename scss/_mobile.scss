@@ -13,8 +13,17 @@
 	animation: changefillcolor 20s ease infinite;
 }
 
-	
-@-webkit-keyframes changefillcolor {
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	&:visited {
+		color: #ffffff;
+	}
+	&:hover {
+		border-bottom: em(2) solid #ffffff;
+	}
+}
+@-webkit-keyframes changecolor {
 	0%{fill:#00a470}
     25%{fill:#00b4d5}
     50%{fill:#e84e0f}
@@ -78,8 +87,10 @@ body {
 }
 
 .main-nav {
+	position: relative;
+	z-index: 999;
 	width: 100vw;
-	ul{
+	ul {
 		padding: $padding-h/4 $padding-w;
 	}
 	ul li {
@@ -90,16 +101,17 @@ body {
 		vertical-align: top;
 		line-height: 2.5rem;
 	}
-	img{
+	img {
 		height: 3em;
 	}
 }
-.puff{
+.puff {
 	height: 50%;
 	width: 103%;
 	@include row();
 
 	.puff__item {
+		position: relative;
 		height: 50%;
 		@include span-columns(6);
 		@include omega;
@@ -107,6 +119,14 @@ body {
 		background-position: center center;
 		background-size: cover;
 		overflow: hidden;
+		cursor: pointer;
+		p {
+			text-align: center;
+			vertical-align: middle;
+			line-height: 320px;
+			color: #ffffff;
+			font-size: 2em;
+		}
 	}
 }
 
@@ -114,93 +134,12 @@ body {
 	@include omega;
 }
 
-.divider-top {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: em(90);
-	background: linear-gradient(to left top, transparent 49.8%, #ffffff 50%);
-	width: 100vw;
-}
-.divder-top--transparent {
-	@extend .divider-top;
-	background: transparent;
-}
-.divider-top--case-contact {
-	@extend .divider-top;
-	background: $accentGreen;
-}
-
-.divider-top--yellow{
-	position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, $accentYellow 0%); 
-	z-index: 900;
-	height: 32vh;
-	width: 100vw;
-}
-.divider-bottom--yellow{
-	position: absolute;
-	height: 32vh;
-	background: linear-gradient(177deg, transparent 70%, $accentYellow 0%); 
-	z-index: 900;
-	width: 100vw;
-	bottom: 0;
-	width: 100%;
-	//background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
-}
-.divider-top{
-	position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, white 0%); 
-	height: 15vh;
-	z-index: 900;
-	width: 100vw;
-}
-.divider-bottom{
-	position: absolute;
-	height: 15vh;
-	background: linear-gradient(177deg, transparent 70%, white 0%); 
-	z-index: 900;
-	width: 100vw;
-	bottom: 0;
-	width: 100%;
-	//background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
-}
-.divider-bottom--case-contact {
-	@extend .divider-bottom;
-	background: $accentGreen;
-}
-.divider-top--grey{
-	position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, $primaryGrey 0%); 
-	z-index: 900;
-	height: 32vh;
-	width: 100vw;
-}
-.divider-bottom--grey {
-	position: absolute;
-	height: 32vh;
-	background: linear-gradient(177deg, transparent 70%, $primaryGrey 0%); 
-	z-index: 900;
-	width: 100vw;
-	bottom: 0;
-}
-.divider-top--header{
-	position: absolute;
-	background: linear-gradient(-3deg, transparent 70%, $primaryGrey 0%); 
-	z-index: 900;
-	height: 40vh;
-	width: 100vw;
-}
-
 .hide-mobile {
 	display: none;
 }
 
 .margin {
-	padding-top: $margin-h;
-	padding-bottom: $margin-h;
-	padding-right: $margin-w;
-	padding-left: $margin-w;
+	padding: 5em 5% 5em 5%;
 }
 
 .about__heading{
@@ -236,6 +175,7 @@ body {
 .icons__section {
 	text-align: center;
 	padding: 1%;
+	padding-bottom: em(105);
 }
 
 .icons__image--caption {
@@ -301,7 +241,7 @@ body {
 		bottom: 0;
 		width: 100%;
 		height: em(60);
-		background: linear-gradient(to right bottom, transparent 49.8%, #ffffff 50%);
+		background: linear-gradient(173deg, transparent 49.8%, #ffffff 50%);
 	}
 }
 .single {
@@ -354,6 +294,7 @@ body {
 	.case-gallery__heading {
 		@include mainHeading;
 		position: relative;
+		padding: em(20);
 		z-index: 9999;
 		color: $accentOrange;
 		text-align: center;
@@ -449,7 +390,9 @@ body {
 		}
 	}
 }
-
+.switch-case {
+	display: none;
+}
 .costumers{
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -896,7 +839,88 @@ body {
 }
 
 .footer {
-	padding-left: $margin-w;
-	padding-top: $margin-h;
+	padding-left: $padding-w;
+	padding-top: $padding-h;
     clear: both;
+}
+
+// DIVIDERS
+.divider-top {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: em(120);
+	background: linear-gradient( -7deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-top--header {
+	@extend .divider-top;
+}
+.divder-top--transparent {
+	@extend .divider-top;
+	background: transparent;
+}
+.divider-top--case-contact {
+	@extend .divider-top;
+	background: $accentGreen;
+}
+.divider-top--yellow {
+	@extend .divider-top;
+	background: linear-gradient( -7deg, transparent 49.8%, $accentYellow 50%);
+}
+.divider-top--grey {
+	@extend .divider-top;
+	background: linear-gradient( -7deg, transparent 49.8%, $primaryGrey 50%);
+}
+.divider-top--header {
+	@extend .divider-top--grey;
+	background: linear-gradient( -7deg, transparent 49.8%, $primaryGrey 50%);
+}
+.divider-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: em(120);
+	background: linear-gradient( 173deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-bottom--yellow {
+	@extend .divider-bottom;
+	background: linear-gradient(173deg, transparent 49.8%, $accentYellow 50%);
+}
+.divider-bottom--case-contact {
+	@extend .divider-bottom;
+	background: $accentGreen;
+}
+.divider-bottom--grey {
+	@extend .divider-bottom;
+	background: linear-gradient(173deg, transparent 49.8%, $primaryGrey 50%); 
+}
+.divider-bottom--header {
+	@extend .divider-bottom;
+	//bottom: 123px;
+}
+
+// OVERLAY
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+}
+.overlayYellow {
+	@extend .overlay;
+	background-color: $accentYellow;
+}
+.overlayGreen {
+	@extend .overlay;
+	background-color: $accentGreen;
+}
+.overlayBlue {
+	@extend .overlay;
+	background-color: $accentBlue;
+}
+.overlayOrange {
+	@extend .overlay;
+	background-color: $accentOrange;
 }

@@ -11,4 +11,4 @@
 		<div class="puff__item" style="background-image: url('imgs/fig7.jpg')"></div>
 		<div class="puff__item" style="background-image: url('imgs/fig1.jpg')"></div>
 </figure>
-<div class="divider-bottom"></div>
+<div class="divider-bottom--header"></div>

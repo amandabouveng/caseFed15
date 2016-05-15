@@ -11,7 +11,9 @@
 .omega {
 	@include omega;
 }
-
+.margin {
+  padding: 7em 5%;
+}
 #us{
 	display: block;
 }
@@ -57,7 +59,7 @@
         margin: o auto;
     }
     .intro__heading {
-        font-size: em(48);
+        font-size: 4em;
     }
     .intro__caption {
         font-size: em(24);
@@ -120,6 +122,24 @@
     }
   }
 }
+.switch-case {
+  display: block;
+  position: fixed;
+  top: 50%;
+  .fa {
+    font-size: 5em;
+    color: $accentYellow;
+    &:hover {
+      -webkit-text-stroke: 0.03em $accentYellow;
+    }
+  }
+}
+.switch-case--prev {
+  left: em(15);
+}
+.switch-case--next {
+  right: em(15);
+}
 
 .contact__heading {
     @include mainHeading;
@@ -133,4 +153,36 @@
     padding-left: $padding-w;
     padding-top: 0;
     clear: both;
+}
+
+// DIVIDERS
+.divider-top {
+  background: linear-gradient( -5deg, transparent 49.8%, #ffffff 50%);
+}
+.divder-top--transparent {
+  background: transparent;
+}
+.divider-top--case-contact {
+  background: $accentGreen;
+}
+.divider-top--yellow {
+  background: linear-gradient( -5deg, transparent 49.8%, $accentYellow 50%);
+}
+.divider-top--grey {
+  background: linear-gradient( -5deg, transparent 49.8%, $primaryGrey 50%);
+}
+.divider-top--header {
+  background: linear-gradient( -5deg, transparent 49.8%, $primaryGrey 50%);
+}
+.divider-bottom {
+  background: linear-gradient( 175deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-bottom--yellow {
+  background: linear-gradient(175deg, transparent 49.8%, $accentYellow 50%);
+}
+.divider-bottom--case-contact {
+  background: $accentGreen;
+}
+.divider-bottom--grey {
+  background: linear-gradient(175deg, transparent 49.8%, $primaryGrey 50%); 
 }
