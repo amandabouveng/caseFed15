@@ -2,32 +2,33 @@
 * Logo color animation
 */
 #logo {
-	-webkit-animation: changecolor 4s ease infinite;
-	-moz-animation: changecolor 4s ease infinite;
-	animation: changecolor 4s ease infinite;
+	-webkit-animation: changefillcolor 4s ease infinite;
+	-moz-animation: changefillcolor 4s ease infinite;
+	animation: changefillcolor 4s ease infinite;
 }
 
 #nav-logo {
-	-webkit-animation: changecolor 20s ease infinite;
-	-moz-animation: changecolor 20s ease infinite;
-	animation: changecolor 20s ease infinite;
+	-webkit-animation: changefillcolor 20s ease infinite;
+	-moz-animation: changefillcolor 20s ease infinite;
+	animation: changefillcolor 20s ease infinite;
 }
+
 	
-@-webkit-keyframes changecolor {
+@-webkit-keyframes changefillcolor {
 	0%{fill:#00a470}
     25%{fill:#00b4d5}
     50%{fill:#e84e0f}
     75%{fill:#fbe100;}
     100%{fill:#00a470}
 }
-@-moz-keyframes changecolor {
+@-moz-keyframes changefillcolor {
     0%{fill:#00a470}
     25%{fill:#00b4d5}
     50%{fill:#e84e0f}
     75%{fill:#fbe100;}
     100%{fill:#00a470}
 }
-@keyframes changecolor { 
+@keyframes changefillcolor { 
     0%{fill:#00a470}
     25%{fill:#00b4d5}
     50%{fill:#e84e0f}
@@ -35,7 +36,27 @@
     100%{fill:#00a470}
 }
 
-
+@-webkit-keyframes changestrokecolor {
+	0%{stroke:#00a470}
+    25%{stroke:#00b4d5}
+    50%{stroke:#e84e0f}
+    75%{stroke:#fbe100;}
+    100%{stroke:#00a470}
+}
+@-moz-keyframes changestrokecolor {
+    0%{stroke:#00a470}
+    25%{stroke:#00b4d5}
+    50%{stroke:#e84e0f}
+    75%{stroke:#fbe100;}
+    100%{stroke:#00a470}
+}
+@keyframes changestrokecolor { 
+    0%{stroke:#00a470}
+    25%{stroke:#00b4d5}
+    50%{stroke:#e84e0f}
+    75%{stroke:#fbe100;}
+    100%{stroke:#00a470}
+}
 
 @for $i from 1 through 12 {
 	.col-m-#{$i} {
@@ -88,8 +109,6 @@ body {
 		overflow: hidden;
 	}
 }
-
-
 
 .omega {
 	@include omega;
@@ -474,14 +493,21 @@ body {
 	min-height: 480px;
 	width: 100%;
 	height: 100%;
-	background: #f1f1f1;
-}
+	background: $primaryGrey;
 
-.ip-header h1 {
-	margin: 0 auto;
-}
+	* {
+		margin: .5em 0;
+	}
 
-.ip-logo,
+	h1 {
+		margin: 0 auto;
+	}
+	h2 {
+		text-align: center;
+		@include subHeading;
+		color: white;
+	}
+}
 .ip-loader {
 	position: absolute;
 	left: 0;
@@ -490,27 +516,29 @@ body {
 	cursor: default;
 	pointer-events: none;
 }
-
-.ip-logo {
-	top: 0;
-	height: 50%;
+.logo-path {
+	margin: 0 auto;
+}
+.ip-logot {
+	top: 30%;
+	height: 100%;
 	-webkit-transform: translate3d(0,25%,0);
 	transform: translate3d(0,25%,0);
 }
 
 .ip-loader {
-	bottom: 40%;
+	bottom: 20%;
+
 }
 
 .ip-header .ip-inner {
 	display: block;
 	margin: 0 auto;
+	text-align: center;
 }
 
-.ip-header .ip-logo svg {
-	min-width: 320px;
-	max-width: 480px;
-	width: 25%;
+.ip-header .ip-logot svg {
+	text-align: center;
 }
 
 .ip-header .ip-loader svg path {
@@ -525,7 +553,9 @@ body {
 .ip-header .ip-loader svg path.ip-loader-circle {
 	-webkit-transition: stroke-dashoffset 0.2s;
 	transition: stroke-dashoffset 0.2s;
-	stroke: #ef6e7e;
+	-webkit-animation: changestrokecolor 4s ease infinite;
+	-moz-animation: changestrokecolor 4s ease infinite;
+	animation: changestrokecolor 4s ease infinite;
 }
 
 /* Content */
@@ -598,12 +628,12 @@ body {
 
 /* Initial animation of header elements */
 .loading {
-	.ip-logo, .ip-loader {
+	.ip-logot, .ip-loader {
 		opacity: 1;
 		-webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
 		animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
 	}
-
+	
 	.ip-loader {
 		-webkit-animation-delay: 0.2s;
 		animation-delay: 0.2s;
@@ -645,6 +675,12 @@ body {
 	}
 
 	/* Content animations */
+	
+	header.section-container nav {
+		-webkit-animation: animLoadedMavigation 1s cubic-bezier(0.7,0,0.3,1) both;
+		animation: animLoadedMavigation 1s cubic-bezier(0.7,0,0.3,1) both;
+	}
+	main,
 	.ip-main h2,
 	.ip-main .browser,
 	.ip-main .browser .box,
@@ -694,12 +730,20 @@ body {
 	animation-delay: 0.2s;
 }
 
+@-webkit-keyframes animLoadedMavigation {
+	from { opacity: 1; -webkit-transform: translate3d(0,600px,0); }
+}
+
+@keyframes animLoadedNavigation {
+	from { opacity: 1; -webkit-transform: translate3d(0,600px,0); transform: translate3d(0,600px,0); }
+}
+
 @-webkit-keyframes animLoadedContent {
-	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); }
+	from { opacity: 0; -webkit-transform: translate3d(0,50px,0); }
 }
 
 @keyframes animLoadedContent {
-	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); transform: translate3d(0,200px,0); }
+	from { opacity: 0; -webkit-transform: translate3d(0,50px,0); transform: translate3d(0,50px,0); }
 }
 
 /* Change layout class for header */

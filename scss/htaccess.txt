@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Case FED15"
+AuthUserFile .htpasswd
+Require valid-user
