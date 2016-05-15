@@ -664,7 +664,11 @@ body {
   transform: translate3d(0, 25%, 0); }
 
 .ip-loader {
-  bottom: 20%; }
+  bottom: 35%; }
+
+.ip-loader p {
+  color: white;
+  text-align: center; }
 
 .ip-header .ip-inner {
   display: block;

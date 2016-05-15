@@ -4,7 +4,7 @@
 		<header class="ip-header">
 			<div class="ip-logot">
 				<h1>
-					<svg id="logo" class="ip-inner" width="200px" height="200px" viewBox="30 0 150 300" aria-labelledby="logo_title">
+					<svg id="logo" class="ip-inner" width="100px" height="100px" viewBox="30 0 150 300" aria-labelledby="logo_title">
 						<path class="logo-path" d="M76.6,0C34.4,0,0,33.9,0,75.5v100.4c0,57.7,47.7,104.7,106.3,104.7c58.6,0,106.3-47,106.3-104.7V74.8h-34.4v101.1
 					c0,38.8-32.3,70.3-71.9,70.3c-39.6,0-71.9-31.6-71.9-70.3V75.5c0-22.7,18.9-41.2,42.2-41.2c23.3,0,42.2,18.5,42.2,41.2v95.7
 					c0,6.6-5.6,12-12.5,12c-6.9,0-12.5-5.4-12.5-12V74.8H59.4v98.4c0,25.6,21,46.4,46.9,46.4c25.9,0,46.9-20.8,46.9-46.4V73.6
@@ -14,10 +14,11 @@
 				<h2>Retail United</h2>
 			</div>
 			<div class="ip-loader">
-				<svg class="ip-inner" width="100px" height="100px" viewBox="0 0 80 80">
-					<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-					<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+				<svg class="ip-inner" width="50px" height="50px" viewBox="0 0 80 80">
+					<!--<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>-->
+					<path id="ip-loader-circle" class="ip-loader-circle" stroke-width="30" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
 				</svg>
+				<p></p>
 			</div>
 		</header>
 		<header class="section-container">
