@@ -41,7 +41,7 @@
 				</form>
 			</section>
 			
-			<footer class="footer col-m-12 col-d-6">Här kommer lite copyright-text</footer>
+			<!--<footer class="footer col-m-12 col-d-6">Här kommer lite copyright-text</footer>-->
 		</section>
 	</section>
 

@@ -91,7 +91,7 @@ body {
 	z-index: 999;
 	width: 100vw;
 	ul {
-		padding: $padding-h/4 $padding-w;
+		padding: $padding-h/2 $padding-w;
 	}
 	ul li {
 		padding-right: 2.5%;
@@ -123,9 +123,9 @@ body {
 		p {
 			text-align: center;
 			vertical-align: middle;
-			line-height: 320px;
+			line-height: 220px;
 			color: #ffffff;
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 	}
 }
@@ -139,7 +139,7 @@ body {
 }
 
 .margin {
-	padding: 2em 5% 5em 5%;
+	padding: 0 0 5em;
 }
 
 .right {
@@ -151,7 +151,7 @@ body {
 
 .center {
 	margin: 0 auto;
-	width: 80%;
+	width:100%;
 }
 
 .about__heading{
@@ -178,33 +178,35 @@ body {
 	@include subHeading;
 	text-align: center;
 	color: $accentOrange;
-	padding-top: $gutter/2;
-	padding-bottom: $gutter/2; 
+	//padding-top: $gutter/2;
+	margin-bottom: $gutter/2; 
 	width: 100%;
-	margin-top: $padding-h/2;
+	//margin-top: $padding-h/2;
 }
 
 .icons__section {
 	text-align: center;
 	padding: 0;
-	padding-bottom: em(105);
+	padding-bottom: em(50);
 }
 
 .icons__image--caption {
-	@include bodyText;
+	@include subHeading;
 	font-weight: 600;
 	color: $primaryGrey;
 	text-align: center;
+	margin-bottom: $gutter/2;
 }
 .icons__image {
 	img {
-		width: 60%;
+		width: 40%;
+		margin-bottom: $gutter/2;
 	}
 	
 }
 .col-container {
 	@include outer-container;
-	padding: $gutter;
+	padding: $gutter/2;
 }
 
 .col-row {
@@ -427,8 +429,8 @@ body {
 	height: 500px;
 }
 #us {
-	display: none;
-	background-image: url('office.jpg'); margin-left: 0px; background-position: center center; background-size: cover; width: 100vw; height: 70vh;
+	
+	background-image: url('office.jpg'); margin-left: 0px; background-position: center center; background-size: cover; width: 100vw; height: 90vh;
 }
 
 /*
@@ -774,7 +776,7 @@ body {
 }
 
 .contact__tagline {
-    @include captionText;
+    @include bodyText;
     padding-top: $gutter/2;
 }
 
@@ -795,7 +797,7 @@ body {
         float: left;
         display: inline-block;
         margin-top: $gutter/3;
-        @include captionText;
+        @include bodyText;
         text-align: middle;
     }
 
@@ -878,9 +880,9 @@ body {
 // DIVIDERS
 .divider-top {
 	position: absolute;
-	top: 0;
+	top: -5px;
 	width: 100vw;
-	height: em(200);
+	height: em(150);
 	padding: 0 50px 0 0;
 	margin: 0 0 0 0;
 	background: linear-gradient( -7deg, transparent 49.8%, #ffffff 50%);
@@ -918,9 +920,9 @@ body {
 }
 .divider-bottom {
 	position: absolute;
-	bottom: 0;
-	width: 100vw;
-	height: em(200);
+	bottom: -5px;
+	width: 100%;
+	height: em(100);
 	background: linear-gradient( 173deg, transparent 49.8%, #ffffff 50%);
 }
 .divider-bottom--yellow {
@@ -938,6 +940,16 @@ body {
 .divider-bottom--header {
 	@extend .divider-bottom;
 	//bottom: 123px;
+}
+.divider-top--opposite {
+	background: linear-gradient( -173deg, #ffffff 49.8%, transparent 50%);
+}
+.divider-bottom--opposite {
+	background: linear-gradient( -173deg, transparent 49.8%, #ffffff 50%);
+}
+.divider-bottom--opposite-yellow {
+	@extend .divider-bottom;
+	background: linear-gradient( -173deg, transparent 49.8%, $accentYellow 50%);
 }
 
 // OVERLAY

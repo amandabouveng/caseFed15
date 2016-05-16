@@ -13,6 +13,12 @@
 	padding: 0;
 }
 
+.main-nav {
+	ul {
+		padding: $padding-h/4 $padding-w;
+	}
+}
+
 .right {
 	float:right;
 	margin-right: 1em;
@@ -44,6 +50,13 @@
 		background-position: center center;
 		background-size: cover;
 		overflow: hidden;
+		p {
+	      text-align: center;
+	      vertical-align: middle;
+	      line-height: 320px;
+	      color: #ffffff;
+	      font-size: 2em;
+	    }
 	}
 }
 

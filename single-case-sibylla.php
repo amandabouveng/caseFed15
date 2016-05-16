@@ -4,7 +4,7 @@
 		<nav class="main-nav divider-top--transparent">
 			<ul>
 				<li><img src="imgs/logo-menu.svg" alt=""><li>
-				<li><a href="index.php>">Hem</a></li>
+				<li><a href="index.php">Hem</a></li>
 				<li><a href="single-case-sibylla.php">Case</a></li>
 				<li>Just nu</li>
 				<li>Kontakt</li>
