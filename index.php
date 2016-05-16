@@ -94,19 +94,19 @@
 		<section style="height: auto; position: relative;" class="margin">
 			<div class="col-container center ">
 				<div class="col-d-12">
-					<h2 class="business__heading col-m-12">Våra affärsområden</h2>
-					<div class="icons__section col-m-12 col-d-4">
+					<h2 class="business__heading col-m-12">Vårt erbjudande</h2>
+					<div class="icons__section col-m-12 col-t-4">
 						<figure class="icons__image"><img src="cloud_yellow.svg"></figure>
 						<figcaption class="icons__image--caption">Insikt & Strategi</figcaption>
 						<p>Med förståelse för helheten, och insikt om kund, konsument och kanal skapar Retail United underlag för val av strategi. Vi arbetar efter en unik metod som skapar insikter baserat på verkligheten i butik, vid köp- eller konsumtionstillfället, detta översätts sedan till konkreta strategier och åtgärder. Genom att ha ett bredare synsätt med flera olika kompetenser kan vi lättare upptäcka och utforska det ”oväntade” och använda det på rätt sätt.</p>
 					</div>
-					<div class="icons__section col-m-12 col-d-4">
+					<div class="icons__section col-m-12 col-t-4">
 						<figure class="icons__image"><img src="star_blue.svg"></figure>
 						<figcaption class="icons__image--caption">Kreation</figcaption>
 						<p>När vi gjort våra strategiska val är det dags att skapa lösningen. Vi arbetar i team av många olika kompetenser för att finna lösningens kärna och sedan dramatisera den. Kreation handlar ofta om att förenkla, målgruppsanpassa och göra intressant. Därför går ju affärsområdet kreation att applicera på nästan vad som helst. 
 	Men typiska utkomster är kommunikationskoncept, kampanjer, aktiveringar, designlösningar, utbildning, införsäljningskoncept med mera.</p>
 					</div>
-					<div class="icons__section col-m-12 col-d-4">
+					<div class="icons__section col-m-12 col-t-4">
 						<figure class="icons__image"><img src="hand_red.svg"></figure>
 						<figcaption class="icons__image--caption">Genomförande</figcaption>
 						<p>Med målet att våra kunder ska uppnå maximalt värde av sina marknadsinsatser måste vi även säkerställa att varumärkens strategi och kommunikation når hela vägen ut. Retail United har mer än 70 dedikerade säljare som varje dag är i butik för att ser till att varumärkens profil och identitet når hela vägen fram.</p>

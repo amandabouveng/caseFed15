@@ -34,18 +34,18 @@
 }
 
 .section-container {
-	height: 40em;
+	height: 50em;
 	width: 100vw;
 	overflow: hidden;
 }
 
 .puff {
-	height: 25%;
+	height: 50%;
 	width: 108%;
 	.puff__item {
 		@include span-columns(3);
 		@include omega;
-		height: 20em;
+		height: 25em;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
@@ -53,10 +53,18 @@
 		p {
 	      text-align: center;
 	      vertical-align: middle;
-	      line-height: 320px;
+	      line-height: 520px;
 	      color: #ffffff;
 	      font-size: 2em;
+
 	    }
+	}
+}
+.puff + .puff {
+	.puff__item {
+		p {
+			line-height: 220px;
+		}
 	}
 }
 

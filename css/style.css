@@ -1224,12 +1224,12 @@ body {
     margin-right: 0; }
 
   .section-container {
-    height: 40em;
+    height: 50em;
     width: 100vw;
     overflow: hidden; }
 
   .puff {
-    height: 25%;
+    height: 50%;
     width: 108%; }
     .puff .puff__item {
       float: left;
@@ -1237,7 +1237,7 @@ body {
       margin-right: 2.35765%;
       width: 23.23176%;
       margin-right: 0;
-      height: 20em;
+      height: 25em;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -1247,9 +1247,12 @@ body {
       .puff .puff__item p {
         text-align: center;
         vertical-align: middle;
-        line-height: 320px;
+        line-height: 520px;
         color: #ffffff;
-        font-size: 2em; } }
+        font-size: 2em; }
+
+  .puff + .puff .puff__item p {
+    line-height: 220px; } }
 @media screen and (min-width: 1024px) {
   .col-d-1 {
     float: left;
@@ -1533,7 +1536,7 @@ body {
     background: linear-gradient(177deg, transparent 49.8%, #ffffff 50%); }
 
   .divider-bottom--yellow {
-    background: linear-gradient(175deg, transparent 49.8%, #fbe100 50%); }
+    background: linear-gradient(177deg, transparent 49.8%, #fbe100 50%); }
 
   .divider-bottom--case-contact {
     background: #00a470; }
